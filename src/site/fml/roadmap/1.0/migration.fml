@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faqs title="C++ to Java migration">
+
+
+    <part id="Typing">
+
+        <faq id="booleans">
+            <question>Booleans</question>
+            <answer>
+                <p>Stellarium emulates boolean values though integer values.
+                    <span class="console">0</span>
+                    stands for false, and
+                    <span class="console">1</span>
+                    stands true.
+                </p>
+                <p>Stellarium for Java uses the built-in
+                    <span class="console">boolean</span>
+                    type, with the predefined constants
+                    <span class="console">false</span>
+                    and<span class="console">true</span>.
+                </p>
+            </answer>
+        </faq>
+
+        <faq id="operators">
+            <question>Operator redefinition</question>
+            <answer>
+                <p>Stellarium uses C++ operator redefinition (which may be as useful as confusing).</p>
+                <p>Java does not support this language feature, but Stellarium for Java enable it through operator-like
+                    methods.
+                </p>
+            </answer>
+        </faq>
+
+        <faq id="enumerations">
+            <question>Enumerations</question>
+            <answer>
+                <p>Stellarium uses C++ enumeration.</p>
+                <p>Java support this language feature since its version 1.5.</p>
+            </answer>
+        </faq>
+
+        <faq id="generics">
+            <question>Generic types</question>
+            <answer>
+                <p>Stellarium uses the C++ ability to defined parameterized classes, a.k.a templates.</p>
+                <p>This feature is available in Java since its version 1.5.</p>
+            </answer>
+        </faq>
+
+    </part>
+
+
+    <part id="Method calls">
+
+        <faq id="parameters-by-ref">
+            <question>Parameters by references</question>
+            <answer>
+                <p>Stellarium uses &quot;out&quot; parameters that are modified by the method and so can be interpreted
+                    as multiple returned values.
+                </p>
+                <p>Java also pass paramaters by reference, but primitive types (<span class="console">int</span>,<span
+                        class="console">double</span>, etc.) are passed by value and simple types wrappers (<span
+                        class="console">Integer</span>,<span class="console">Double</span>, etc.) are immutable.
+                    Stellarium for Java can emulate it by using references to mutable objects.
+                </p>
+            </answer>
+        </faq>
+
+        <faq id="default-values">
+            <question>Default values</question>
+            <answer>
+                <p>Stellarium uses C++ default values, which allow the developper to avoid providing some parameter
+                    values which will be assumed as default values specified it the method prototype.
+                </p>
+                <p>This language feature is not supported in Java, but can be implemented as overloading methods
+                    enforcing such default values.
+                </p>
+            </answer>
+        </faq>
+
+        <faq id="error-management">
+            <question>Error management</question>
+            <answer>
+                <p>Stellarium notifies errors as reserved return codes (-1, etc.) or booleans (0 for false)</p>
+                <p>Stellarium for Java uses the Java exception mechanism to notify errors.</p>
+            </answer>
+        </faq>
+
+        <faq id="function-pointers">
+            <question>Function pointers</question>
+            <answer>
+                <p>Stellarium use the ability of C to use function pointers.</p>
+                <p>Because of its insulation from memory-specific issues, Java doesn't allow such a capability. However,
+                    it can be emulated through object design pattern such as Strategies.
+                </p>
+            </answer>
+        </faq>
+
+    </part>
+
+
+    <part id="Librairies">
+
+        <faq id="graphics">
+            <question>Graphics</question>
+            <answer>
+                <p>Stellarium uses OpenGL both as its 2D and 3D graphic API.</p>
+                <p>In the Java world, OpenGL is available both through proprietary (JOGL) and standard (Java3D) APIs. We
+                    choosed to use JOGL to ease the initial migration step, then to use Java3D in a second release.
+                </p>
+            </answer>
+        </faq>
+
+        <faq id="gui">
+            <question>GUI</question>
+            <answer>
+                <p>Stellarium implement its own Graphical User Interface.</p>
+                <p>In Java most of these functions are built in the platform, thanks to the AWT and Swing.</p>
+            </answer>
+        </faq>
+
+        <faq id="date-time">
+            <question>Date/time</question>
+            <answer>
+                <p>Stellarium implements its own date/time funtions.</p>
+                <p>In Java most of these functions are built in the platform, thanks to the java.util.Date and
+                    java.util.Calendar classes
+                </p>
+            </answer>
+        </faq>
+
+    </part>
+
+
+</faqs>

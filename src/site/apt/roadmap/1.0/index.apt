@@ -1,0 +1,65 @@
+            ------
+            1.0 Release - Roadmap - Stellarium for Java
+            ------
+            Jerome BEAU
+            ------
+            2008-05-27
+
+
+1.0 release
+
+  This release is now closed.
+
+* Goals
+
+  * {{{migration.html}Migrate C++ code to Java code}}
+
+  * Isofunctionnality with release 0.8.2 of the original Stellarium.
+
+  See all 1.0 issues.
+
+* Achieved
+
+  * Isofunctionnality, except:
+
+    * Scripts
+
+    * Text UI
+
+    * Telescope support
+
+    * Config save
+
+    * A few display bugs
+
+      * Cursor not always transparent
+
+      * Distorted planets view in some circumstances
+
+      * Ground distorsion
+
+      * Projections other than stereographic fail
+
+      * Moon landscape fails
+
+  * Added functionalities
+
+    * Web deployment
+
+    * Lazy loading of resources from the web (not a big download any more, ability to get resources updates transparently)
+
+    * Viewport resizing (achieved in the release 0.9 of the original Stellarium as well)
+
+    * Look & feel change
+
+  See resolved 1.0 issues.
+
+* Technical details
+
+  * Uses
+
+    * JRE 1.6.0
+
+      * Swing UI
+
+    * JOGL 1.1.0.

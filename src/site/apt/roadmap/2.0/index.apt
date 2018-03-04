@@ -1,0 +1,56 @@
+            ------
+            2.0 Release - Roadmap - Stellarium for Java
+            ------
+            Jerome BEAU
+            ------
+            2008-05-27
+
+2.0 release
+
+  This release is being developed.
+
+* Goals
+
+  * Refactorings
+
+    * Decouple computations from display
+
+    * Make it OSGi-based to enable extensibility, hot deployment and ease non-desktop devices deployment
+
+    * Replace Swing by JavaFX
+
+  * Functionalities
+
+    * WorldWind for Java integration
+
+    * Missing original Stellarium features
+
+      * Scripts
+
+      * Text UI
+
+      * Telescope support
+
+    * (deferred) Artificial satellite tracking
+
+    * (deferred) Ionized gaz rendering
+
+    * (deferred) Replacement of JOGL by Java3D in order to support both OpenGL and Direct3X
+
+  See all 2.0 issues.
+
+* Achieved goals
+
+  See resolved 2.0 issues.
+
+* Technical details
+
+  * Requires
+
+    * JRE 1.6.0
+
+    * JOGL 1.1.1.
+
+    * JavaFX
+
+    * WorldWind 0.5 (if used)

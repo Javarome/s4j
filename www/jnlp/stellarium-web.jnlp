@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- JNLP File for Stellarium for Java -->
+<jnlp spec="1.0+" codebase="@codebase@" href="stellarium-web.jnlp">
+    <information>
+        <title>Stellarium for Java</title>
+        <vendor>S4J</vendor>
+        <homepage href="http://stellarium4java.sourceforge.net/index.html"/>
+        <description>Stellarium for Java planetarium software with data and pictures downloaded from the Web
+        </description>
+        <description kind="short">Java version of Stellarium planetarium software.</description>
+        <icon href="/stellarium4java/org.stellarium.ico"/>
+        <icon kind="splash" href="data/splash.gif"/>
+        <offline-allowed/>
+        <shortcut online="true">
+            <desktop/>
+            <menu submenu="Stellarium for Java Web"/>
+        </shortcut>
+    </information>
+    <security>
+        <all-permissions/>
+    </security>
+    <resources>
+        <j2se href="http://java.sun.com/products/autodl/j2se" version="1.6+" initial-heap-size="64m"
+              max-heap-size="128m"/>
+        <jar href="vecmath.jar"/>
+        <jar href="@org.stellarium.sign.jar@" main="true"/>
+        <extension name="jogl"
+                   href="http://download.java.net/media/jogl/builds/archive/jsr-231-1.1.0/webstart/jogl.jnlp"/>
+    </resources>
+    <application-desc>
+        <argument>@resources.urls@</argument>
+    </application-desc>
+</jnlp>

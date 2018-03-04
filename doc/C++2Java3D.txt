@@ -1,0 +1,4 @@
+Equivalent in operators :
+
+c++ :  Matrix4d t = Matrix4d * Matrix4d
+java : Matrix4d t = new Matrix4d(); t.mul(Matrix4d, Matrix4d)

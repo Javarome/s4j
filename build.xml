@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ This is the ANT build file for the Stellarium for Java (S4J)
+ 
+ It is no longer maintained, use Maven instead.
+ -->
+<project name="stellarium4java" default="build" basedir=".">
+    <target name="init">
+        <property file="build.properties"/>
+        <property name="javac.target" value="5"/>
+        <property name="build.dir" value="build"/>
+        <property name="build.classes.dir" value="${build.dir}/classes"/>
+        <property name="build.lib.dir" value="${build.dir}/lib"/>
+        <property name="org.stellarium.jar" value="${build.lib.dir}/org.stellarium.jar"/>
+        <property name="resources.zip" value="${build.lib.dir}/stellarium-resources.zip"/>
+        <property name="build.run.dir" value="${build.dir}/run"/>
+        <property name="ext.lib" value="lib"/>
+        <property name="jnlp.dir" value="${build.dir}/www/jnlp"/>
+        <property name="jnlp.name" value="stellarium4java"/>
+        <property name="vecmath.sign.jar" value="${jnlp.dir}/vecmath.jar"/>
+        <property name="org.stellarium.sign.jar" value="${jnlp.dir}/${jnlp.name}.jar"/>
+        <property name="resources.sign.zip" value="${jnlp.dir}/${jnlp.name}-resources.jar"/>
+        <!-- Default value for resources.urls -->
+        <property name="root.web" value="${dest.web}${dest.folder}/${version}"/>
+        <property name="resources.urls" value="${root.web}/resources"/>
+    </target>
+
+    <target name="check.dep" depends="init">
+        <echo message="The OS is ${os.name} and arch ${os.arch}"/>
+        <!-- TODO: download and extract JOGL depending on the os and arch 
+                   and set the java library path correctly -->
+        <path id="dep.path">
+            <fileset dir="${ext.lib}">
+                <include name="*.jar"/>
+            </fileset>
+        </path>
+    </target>
+
+    <target name="build" depends="check.dep">
+        <mkdir dir="${build.classes.dir}"/>
+        <javac fork="true"
+               srcdir="src"
+               destdir="${build.classes.dir}"
+               includeAntRuntime="no"
+               target="${javac.target}">
+            <!-- <compilerarg line="-Xlint"/> -->
+            <classpath refid="dep.path"/>
+        </javac>
+        <copy todir="${build.classes.dir}">
+            <fileset dir="src">
+                <include name="**/*.data"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <mkdir dir="${build.lib.dir}"/>
+        <jar file="${org.stellarium.jar}">
+            <manifest>
+                <attribute name="Main-Class" value="org.org.stellarium.Main"/>
+            </manifest>
+            <fileset dir="${build.classes.dir}"/>
+        </jar>
+        <zip destfile="${resources.zip}" basedir="src/main/resources"/>
+    </target>
+
+    <target name="clean" depends="init,init-keystore">
+        <delete dir="${build.dir}"/>
+        <!--<delete file="${keystore.file}"/>-->
+    </target>
+
+    <target name="clean-run" depends="init">
+        <delete dir="${build.run.dir}"/>
+    </target>
+
+    <target name="run" depends="build">
+        <mkdir dir="${build.run.dir}/lib"/>
+        <unzip src="${resources.zip}" dest="${build.run.dir}"/>
+        <java classname="org.org.stellarium.Main" fork="true" dir="${build.run.dir}">
+            <sysproperty key="java.library.path" value="${jogl.native.dir}"/>
+            <classpath>
+                <path refid="dep.path"/>
+                <pathelement location="${build.classes.dir}"/>
+            </classpath>
+        </java>
+    </target>
+
+    <target name="run-web" depends="build">
+        <java classname="org.org.stellarium.webstart.StelWebStart" fork="true">
+            <sysproperty key="java.library.path" value="${jogl.native.dir}"/>
+            <arg value="${resources.urls}"/>
+            <classpath>
+                <path refid="dep.path"/>
+                <pathelement location="${build.classes.dir}"/>
+            </classpath>
+        </java>
+    </target>
+
+    <target name="init-keystore">
+        <property file="security.properties"/>
+        <condition property="keystore.exist">
+            <available file="${keystore.file}"/>
+        </condition>
+    </target>
+
+    <target name="jnlp" depends="build,generate-keystore">
+        <delete dir="${jnlp.dir}"/>
+        <mkdir dir="${jnlp.dir}"/>
+
+        <copy todir="${jnlp.dir}">
+            <filterset>
+                <filter token="codebase" value="${root.web}/jnlp"/>
+                <filter token="org.stellarium.sign.jar" value="${jnlp.name}.jar"/>
+                <filter token="resources.sign.zip" value="${jnlp.name}-resources.jar"/>
+                <filter token="resources.urls" value="${resources.urls}"/>
+            </filterset>
+            <fileset dir="www/jnlp">
+                <include name="stellarium-web.jnlp"/>
+                <include name="stellarium-standalone.jnlp"/>
+            </fileset>
+        </copy>
+
+        <unzip dest="${build.dir}/tmp" src="${ext.lib}/vecmath.jar"/>
+        <jar destfile="${vecmath.sign.jar}">
+            <fileset dir="${build.dir}/tmp">
+                <exclude name="META-INF/*.RSA"/>
+                <exclude name="META-INF/*.SF"/>
+            </fileset>
+        </jar>
+
+        <jar destfile="${org.stellarium.sign.jar}">
+            <fileset dir="${build.classes.dir}">
+                <exclude name="META-INF/*.RSA"/>
+                <exclude name="META-INF/*.SF"/>
+            </fileset>
+            <manifest>
+                <attribute name="Main-Class" value="org.org.stellarium.webstart.StelWebStart"/>
+            </manifest>
+        </jar>
+        <jar destfile="${resources.sign.zip}">
+            <fileset dir="${build.lib.dir}">
+                <include name="*-resources.zip"/>
+            </fileset>
+        </jar>
+
+        <signjar jar="${org.stellarium.sign.jar}"
+                 keystore="${keystore.file}" alias="${alias}" storepass="${pass}"/>
+
+        <signjar jar="${resources.sign.zip}"
+                 keystore="${keystore.file}" alias="${alias}" storepass="${pass}"/>
+
+        <signjar jar="${vecmath.sign.jar}"
+                 keystore="${keystore.file}" alias="${alias}" storepass="${pass}"/>
+    </target>
+
+    <target name="generate-keystore" depends="init-keystore" unless="keystore.exist">
+        <echo message="keystore.exist: ${keystore.exist}"/>
+
+        <genkey alias="${alias}" storepass="${pass}" keystore="${keystore.file}">
+            <dname>
+                <param name="CN" value="S4J"/>
+                <param name="O" value="http://stellarium4java.sourceforge.net/"/>
+                <param name="C" value="Stellarium4java"/>
+            </dname>
+        </genkey>
+    </target>
+
+    <!--target name="deploy-jnlp" depends="init,init-keystore">
+        <exec executable="pscp">
+            <arg line="-pw Ya2lpp4b"/>
+            <arg value="${basedir}/${jnlp.dir}/stellarium-web.jnlp"/>
+            <arg value="${basedir}/${jnlp.dir}/stellarium-standalone.jnlp"/>
+            <arg value="${stellarium.sign.jar}"/>
+            <arg value="${vecmath.sign.jar}"/>
+            <arg value="${dest.scp}${dest.folder}/${version}/jnlp"/>
+        </exec>
+    </target>
+
+    <target name="deploy-jnlp-jar" depends="init,init-keystore">
+        <exec executable="scp">
+            <arg value="${stellarium.sign.jar}"/>
+            <arg value="${dest.scp}${dest.folder}/${version}/jnlp"/>
+        </exec>
+    </target>
+
+    <target name="deploy-jnlp-resources" depends="init,init-keystore">
+        <exec executable="scp">
+            <arg value="${resources.sign.zip}"/>
+            <arg value="${dest.scp}${dest.folder}/${version}/jnlp"/>
+        </exec>
+    </target -->
+    <target name="deploy-jnlp" depends="init,init-keystore">
+        <copy todir="C:/Projet/stellarium4java/doc/web/jnlp" overwrite="true" verbose="true">
+            <fileset dir="${jnlp.dir}"/>
+        </copy>
+    </target>
+</project>
+

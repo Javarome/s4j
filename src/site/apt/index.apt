@@ -1,0 +1,49 @@
+            ------
+            Introduction - Stellarium for Java
+            ------
+            Jerome BEAU
+            ------
+            2009-10-07
+
+
+  Welcome to Stellarium for Java (S4J) website, a {{{http://java.sun.com}Java}} version of {{{http://stellarium.org}Stellarium}}.
+
+  S4J is a free {{{http://en.wikipedia.org/wiki/Gpl}GPL}} software which renders realistic skies in real time.
+With Stellarium, you really see what you can see with your eyes, binoculars or a small telescope.
+Stellarium is also used in {{{http://www.digitaliseducation.com}planetariums}}.
+
+  S4J aims to provide the same functionnalities as the original Stellarium but over the Java platform,
+thus allowing both a greater portability accross platforms and low level APIs (OpenGL, Direct3X)
+and greater evolutivity, as well as lighter and easier coding.
+
+  Check out S4J feedback:
+
+   * {{{http://www.informit.com/blogs/blog.aspx?uk=JavaOne-Report}Frank Coyle on InformIT}} : saw a REALLY cool demo - pick a place on the earth and you get to see the stars
+     that are above you in the sky - day and night, with annotations on the celestial objects.
+
+   * {{{http://www.gtablue.com/technogeek/?p=8}on gtablue}} : JOGL / Stellarium (a cool planetarium-like program written in Java)
+
+   * {{{http://technology.amis.nl/blog/?p=3153}Wouter van Reeven on AMIS}} :
+     THE BEST AND COOLEST demo I have ever seen: The biggest hobby in my life is astronomy.
+     It has been for a long time and I even have a degree in it. Seeing that the science wasn’t as much fun as the hobby,
+     I persued a carreer in ICT. My colleague Lucas told me there was going to be a presentation
+     about porting a planetarium program called Stellarium from C++ to Java using Java OpenGL, or JOGL.
+     Getting a real good overview of what problems you get when trying to port an application from C++ to Java,
+     the demos simply kicked ass! If you have some time, check out Stellarium for Java. It runs fast and smoothly,
+     at least on modern computers. At one point Jerome Beau and Frederic Simon showed a star map
+     and then opened up the Location selector map. While having pressed down the left mouse button
+     and dragging the mouse pointer all over the Earth, the star map in the background got redrawn almost instantaneously.
+     Another pretty cool feature was the fading in and out of constellation lines, azimuth and equatorial grid, etc etc.
+     These guys really have done a tremendously good job with this application.
+     After the presentation I gave them my cards and asked them to contact me.
+     They are in need of astronomers and/or Java coders so if you like, go and help them.
+
+   * {{{http://www.javarome.org/post/2008/05/13/So-far-ago-from-Frisco}Jerome Beau's report from JavaOne}} (french)
+
+   * {{{http://freddy33.blogspot.com/2008/02/stellarium-for-java-alpha-release.html}Fred Simon's alpha release annoucement}}
+
+   * {{{http://www.javarome.org/post/2008/02/16/Stellarium-for-Java-alpha}Jerome Beau's alpha release annoucement}} (french)
+
+   * Michael Levin's Weblog and Swampcast : {{{http://www.jroller.com/Sandymountster/entry/stellarium_something_new_under_the}Stellarium - Something New Under the Sun}}
+
+   * {{{http://java.bokeland.com/blog/359/1013/2008/03/10/348083}JavaPosse Roundup '08 from the Swamp}}

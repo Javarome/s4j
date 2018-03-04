@@ -1,0 +1,15 @@
+# From Java3D 1.5.1 https://java3d.dev.java.net/binary-builds.html
+# Sources: http://download.java.net/media/java3d/builds/release/1.5.1/j3d-1_5_1-src.zip
+# Java3D should not be installed in the JRE or JDK
+vecmath.jar
+# From JOGL 1.1.0 https://jogl.dev.java.net/servlets/ProjectDocumentList?folderID=7333&expandFolder=7333&folderID=6750
+# Sources: http://download.java.net/media/jogl/builds/archive/jsr-231-1.1.0/jogl-1.1.0-src.zip
+# Bundled zip: http://download.java.net/media/jogl/builds/archive/jsr-231-1.1.0/jogl-1.1.0-${os.name}-${os.arch}.zip
+gluegen-rt.jar
+jogl.jar
+# And native libraries
+gluegen-rt
+jogl
+jogl_awt
+jogl_cg
+

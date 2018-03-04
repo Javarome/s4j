@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Stellarium for Java">
+    <publishDate position="right"/>
+    <version position="right"/>
+    <bannerLeft>
+        <name>Stellarium for Java</name>
+        <src>/images/logo.png</src>
+        <href>http://stellarium4java.sourceforge.net</href>
+    </bannerLeft>
+    <bannerRight>
+        <name>S4J on Sourceforge</name>
+        <src>/images/sourceforge.png</src>
+        <href>http://sourceforge.net/projects/stellarium4java</href>
+    </bannerRight>
+    <body>
+        <links>
+            <item name="En Français" href="fr/index.html"/>
+            <item name="Sourceforge" href="http://sourceforge.net/projects/stellarium4java"/>
+            <item name="Java" href="http://java.sun.com"/>
+        </links>
+
+        <menu name="Product">
+            <item name="Introduction" href="index.html"/>
+            <item name="Screenshots" href="screenshots.html"/>
+            <item name="FAQ" href="faq.html"/>
+            <item name="Road Map" href="roadmap/index.html"/>
+        </menu>
+
+        <menu ref="reports"/>
+
+    </body>
+
+    <poweredBy>
+        <logo name="Maven" href="http://maven.apache.org/"
+              img="http://maven.apache.org/images/logos/maven-feather.png"/>
+    </poweredBy>
+
+</project>

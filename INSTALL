@@ -1,0 +1,28 @@
+------ STELLARIUM FOR JAVA (S4J) INSTALLATION INSTRUCTIONS ------
+
+WINDOWS OR MACOSX USERS : ----------------------------------
+~$ java -jar target/
+
+------------------------------------------------
+MACOSX USERS : ----------------------------------
+run stellarium.dmg
+
+------------------------------------------------
+COMPILATION ----------------
+To compile S4J using Maven, you will need Maven 2 installed.
+
+You need to compile the sources :
+change directory to the root directory of S4J where build.xml is located
+~$ mvn compile
+
+If the test are failing on your side, you can disable them by through the maven.test.skip system variable. For instance:
+
+mvn assembly:assembly -Dmaven.test.skip=true
+
+which will typically generate an executable JAR file into the "target" subdirectory:
+
+then to launch the local version of the program type
+~$ java -Djava.library.path=lib/mac -jar target/s4j-2.0-SNAPSHOT-jar-with-dependencies.jar
+
+to fully install S4J (so that it will be launchable from everywhere) type
+~$ mvn install

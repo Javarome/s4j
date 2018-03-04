@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faqs title="Frequently Asked Questions">
+
+
+    <part id="General">
+
+        <faq id="what-is-s4j">
+            <question>What is Stellarium for Java?</question>
+            <answer>
+                <p>Stellarium is an open source desktop planetarium for Java platforms, including Linux/Unix, Windows
+                    and MacOSX. It renders the skies in realtime using OpenGL, which means the skies will look exactly
+                    like what you see with your eyes, binoculars, or a small telescope. Stellarium is very simple to
+                    use, which is one of its biggest advantages: it can easily be used by beginners.
+                </p>
+                <p>
+                    The
+                    <a href="http://stellarium.org">original Stellarium</a>
+                    project was started by Fabien Chéreau during the summer of 2001 and uses Sourceforge
+                    intensively.
+                </p>
+                <p>Stellarium for Java (S4J) is the Java version of Stellarium. Access the Sourceforge project page<a
+                        href="http://sourceforge.net/projects/stellarium4java/">here</a>.
+                </p>
+            </answer>
+        </faq>
+
+        <faq id="stellarium-s4j-sync">
+            <question>How Stellarium and Stellarium for Java will be sync?
+            </question>
+            <answer>
+                <p>Currently Stellarium for Java is sync with Stellarium 0.8.2. Once that version released as non-beta,
+                    the project may check for improvements and new features from the original Stellarium, and integrate
+                    them as needed.
+                </p>
+            </answer>
+        </faq>
+
+        <faq id="is-s4j-free">
+            <question>Is Stellarium for Java free?
+            </question>
+            <answer>
+                <p>Yes. Stellarium is free software in both meanings of the term. That is, available for free and open
+                    source : anyone has the right to download, use, distribute and even modify it provided that the
+                    terms of its
+                    <a href="http://www.gnu.org/copyleft/gpl.html">GNU Public License (GPL)</a>
+                    are respected.
+                </p>
+            </answer>
+        </faq>
+
+        <faq id="where-download-s4j">
+            <question>Where can I download Stellarium?
+            </question>
+            <answer>
+                <p>Currently Stellarium is available as a
+                    <em>Java Web Start</em>
+                    application (<a href="http://java.sun.com/javase/6/download.jsp">to be installed first</a>, if you
+                    don't have any Java runtime on your host)
+                    <a href="http://stellarium4java.sourceforge.net/stellarium4java/jnlp/stellarium.jnlp">from
+                        Sourceforge
+                    </a>
+                    or<a href="https://stellarium4java.dev.java.net/files/documents/4463/87940/stellarium.jnlp">from
+                        Java.net</a>.
+                </p>
+                <p>Further releases will be available from the
+                    <a href="http://stellarium.free.fr/download.html">download page</a>
+                    of the Sourceforge servers.
+                </p>
+            </answer>
+        </faq>
+
+        <faq id="where-feedback">
+            <question>Where can I provide feedback?
+            </question>
+            <answer>
+                <p>Your ideas and comments are invaluable to Stellarium. Have a look at
+                    <a href="feedbacks.html">the feedback page</a>
+                    to see where you can get personal support, ask for new features, report bugs and even submit your
+                    own patches.
+                </p>
+            </answer>
+        </faq>
+
+    </part>
+
+
+    <part id="Java">
+
+        <faq id="what-is-java">
+            <question>What is Java?</question>
+            <answer>
+                <p>
+                    <a href="http://java.sun.com">Java</a>
+                    is a software plaftorm that allows a sofware to run on many lower-level platforms such as Windows,
+                    Linux, MacOS and many others. Java software is run by a JVM (<em>Java Virtual Machine</em>) software
+                    that runs on your host.
+                </p>
+            </answer>
+        </faq>
+
+        <faq id="stellarium-s4j-sync">
+            <question>Why a Java version of Stellarium?</question>
+            <answer>
+                <p>There is a number of reasons for providing a Java version of Stellarium. Among these are :
+                </p>
+                <ul>
+                    <li>
+                        <strong>Better portability</strong>
+                        accross platforms but also APIs (both OpenGL and Direct3D can be leveraged by<a
+                            href="https://java3d.dev.java.net/">Java3D</a>)
+                    </li>
+                    <li><strong>Demonstrate how a complex C++ application can be written using Java</strong>(showing the
+                        <a href="http://java.sun.com/developer/technicalArticles/releases/j2se15/">latest language
+                            features of Java 5</a>, as well as useful APIs such as<a
+                                href="https://java3d.dev.java.net/">
+                            Java3D</a>,<a href="https://jogl.dev.java.net/">JOGL</a>,<a
+                                href="http://java.sun.com/products/jfc">
+                            Swing</a>, I18N, and many others)
+                    </li>
+                    <li><strong>Evolutivity</strong>: we believe that there is much more room for evolutions of
+                        Stellarium through the Java path that through the C++ path.
+                    </li>
+                    <li><strong>Provide Java developers various software routines</strong>of interest for their own GPL
+                        software.
+                    </li>
+                </ul>
+            </answer>
+        </faq>
+
+        <faq id="isnt-java-slow">
+            <question>Isn't Java too slow?</question>
+            <answer>
+                <p>No. Just check it out by running S4J.</p>
+                <p>This argument was valid when the first releases of Java appeared (around 1996), but has become
+                    increasingly false with each new release. Some figures put JDK 1.0 at 20 to 40 times slower than
+                    C++. J2SE 1.4.2 is typically 1.1-1.3 times slower, and
+                    <a href="http://java.sun.com/j2se/1.5.0">J2SE 1.5</a>
+                    (a.k.a. Java 5) is meant to be 1.2 to 1.5 times faster than its predecessor. S4J now runs on Java
+                    1.6 (a.k.a Java 6).
+                </p>
+                <p>Note that these numbers depend greatly on the code quality. Java programmers must be good programmers
+                    in order to utilise Java efficiently, but that's true of any language.
+                    <a href="http://www.javaperformancetuning.com">Jack Shirazi's Java Performance Tuning site</a>
+                    is a good source for performance tips, and links to tools and other resources.
+                </p>
+                <p>A benchmarking of Java vs C++ by Keith Lea caused quite a<a
+                        href="http://www.theserverside.com/news/thread.tss?thread_id=26634">stir</a>. He found that Java
+                    may sometimes be faster than C++.
+                </p>
+                <p>The speed-up in Java is mostly due to improvements in compiler design. The
+                    <a href="http://java.sun.com/products/hotspot/">Hotspot</a>
+                    technology introduced in J2SE 1.3 enables the run-time system to identify crucial areas of code that
+                    are utilised many times, and these are aggressively compiled. Hotspot technology has the unfortunate
+                    side-effect that program execution is often slow at the beginning until the code has been analyzed
+                    and compiled.
+                </p>
+                <p>
+                    <a href="http://java.sun.com/products/jfc">Swing</a>
+                    often comes under attack for being slow. Swing GUI components are created and controlled from Java,
+                    with little OS support: this increases their portability and makes them more controllable from
+                    within a
+                    Java program. Speed is supposedly compromised because Java imposes an extra layer of processing
+                    above the
+                    OS.
+                    This is one reason why some games applications still utilise the original Abstract Windowing Toolkit
+                    (AWT) - it's mostly just simple wrapper methods around OS calls.
+                </p>
+                <p>
+                    A crucial point about speed is knowing what to blame when a program runs slowly. Typically, a large
+                    part of the graphics rendering of a game is handled by hardware or software outside of Java. For
+                    example,
+                    Java 3D passes its rendering tasks down to OpenGL or Direct3X, which may emulate hardware
+                    capabilities such as bump mapping. Often the performance bottleneck in network games is the network.
+                </p>
+            </answer>
+        </faq>
+
+        <faq id="java-memory-leaks">
+            <question>Hasn't Java memory leaks?</question>
+            <answer>
+                <p>When C/C++ programmers refer to memory leaks in Java, it may mean that they don't understand how
+                    Java works. Java doesn't offer pointer arithmetic, and typical C-style memory leaks such as
+                    out-of-bounds array accesses are caught by the Java compiler. However, they may mean that objects
+                    which
+                    are no longer needed by the program are not being garbage collected. This becomes an issue if the
+                    program keeps creating new objects, requiring more memory, and eventually crashes when the maximum
+                    allocation is exceeded.
+                </p>
+                <p>This kind of problem is a consequence of bad programming style, since the garbage collector can only
+                    do
+                    its job when an object is completely dereferenced (i.e. the program no longer refers to it). A good
+                    profiling tool, such as<a href="http://www.ej-technologies.com/products/jprofiler/overview.html">
+                        JProfiler</a>, can be a great help in identifying code using excessive amounts of memory.
+                    JProfiler
+                    is a commercial product; many open source profilers are<a href="http://java-source.net">
+                        available</a>.
+                </p>
+                <p>Another memory related complaint is that the garbage collector is executing at poorly timed
+                    intervals,
+                    causing the application to halt for seconds while the collector sweeps and cleans.
+                </p>
+                <p>The JVM comes with several different garbage collectors, which collect in various ways, and can be
+                    selected and fine-tuned from the command line. Information on the performance of the chosen
+                    collector
+                    can be gathered and analysed. A good hands-on explanation of this topic, centered around the
+                    <a href="http://www-106.ibm.com/developerworks/java/library/j-perf06304">JTune</a>
+                    visualization tool.
+                </p>
+            </answer>
+        </faq>
+
+        <faq id="java-high-level">
+            <question>Isn't Java too high level?</question>
+            <answer>
+                <p>This complaint is the age old one of abstraction versus speed and control. The details of the
+                    argument
+                    often include the following statements:
+                </p>
+                <p>1. Java's use of classes, objects and, inheritance add too much overhead without enough coding
+                    benefit;
+                </p>
+                <p>
+                    2. Java's machine independence means that low-level, fast operations, such as direct Video RAM
+                    I/O, are impossible.
+                </p>
+                <p>Statement (1) ignores the obvious benefits of reusing and extending Java's very large class
+                    library, which includes high-speed I/O, advanced 2D and 3D graphics, and an enormous range of
+                    networking
+                    techniques, from lowly sockets to distributed agents. Also forgotten are the advantages of object
+                    oriented design, typified by UML, which makes complex, large real-world systems more manageable
+                    during development, implementation, and maintenance.
+                </p>
+                <p>Statement (2) impacts gaming when we consider high-speed graphics, but it's been addressed in recent
+                    versions of Java. J2SE 1.4 introduced a<a
+                            href="http://java.sun.com/docs/books/tutorial/extra/fullscreen/">full-screen exclusive mode
+                        (FSEM)</a>, which suspends the normal windowing environment, and allows an application to more
+                    directly access the underlying graphics hardware. It permits techniques such as page flipping, and
+                    provides control over the screen's resolution and image depth. The principal aim of FSEM is to speed
+                    up graphics-intensive applications, such as games. Statement (2) also comes into play for game
+                    perpherals, such as joysticks and gamepads; machine independence seems to suggest that
+                    'non-standard' I/O
+                    devices won't be useable. Java games requiring these types of devices can utilize
+                    <a
+                            href="http://java.sun.com/docs/books/tutorial/native1.1/">JNI, the Java Native Interface
+                    </a>
+                    , to link to C or C++ and so to the hardware. There's even<a href="https://jinput.dev.java.net/">
+                        JInput</a>, a new game controller API, due to be finalised early in 2005.
+                </p>
+                <p>An interesting historical observation is that the gaming community use to think that C and C++ were
+                    too high-level for fast, efficient games programming, when compared to assembly language. Opinions
+                    started to change only after the obvious success of games written in C, such as Doom and Dungeon
+                    Master, in
+                    the mid 1980s. Also important was the appearance of cross-platform development tools that supported
+                    C,
+                    such as Renderware.
+                </p>
+            </answer>
+        </faq>
+
+        <faq id="java-graphics-3d">
+            <question>Is anyone using Java to write graphics-intensive or 3D software?</question>
+            <answer>
+                <p>A good example is Java games, some of which are commercial. The number of commercial Java games is
+                    small compared to ones coded in C++ or C, but the number is growing, and many have garnered awards
+                    and become bestsellers:
+                </p>
+                <p>
+                    <a href="http://www.puzzlepirates.com">Puzzle Pirates</a>
+                    by Three Rings, a multiplayer pirate game that includes Tetris- or Columns-like puzzles at various
+                    points. Both the client and server are written in Java. It won several awards during 2004, including
+                    the Technical Excellence and Audience Choice prizes at the Game Developers Conference.
+                </p>
+                <p>
+                    <a href="http://www.chromethegame.com/en/show.php">Chrome</a>
+                    by Techland. A futuristic multiplayer FPS made up of 14 different missions, in an amazing variety of
+                    landscapes. It received a Duke's Choice Award from Sun Microsystems in 2004 for the most innovative
+                    product using Java technology.
+                </p>
+                <p><a href="http://www.lawandordergame.com/index2.htm">Law and Order II</a>, by Legacy Interactive. A
+                    detective game written in Java,<a href="https://java3d.dev.java.net/">Java 3D</a>, and<a
+                            href="http://developer.apple.com/quicktime/qtjava/">Quicktime for Java</a>. The first Law
+                    and Order sold over 100,000 units.
+                </p>
+                <p><a href="http://www.abandonedcastle.com">Kingdom of Wars</a>, set in the fantasy world of Jairon, by
+                    Abandoned Castle Studios
+                </p>
+                <p>
+                    <a href="http://www.puppygames.net/info.php?game=Alien_Flux">Alien Flux</a>
+                    , an exciting arcade shoot-em-up from Puppy Games
+                </p>
+                <p>
+                    <a href="http://www.eaglegames.net/products/WAR_AOI/wai.shtml">War! Age of Imperialism</a>, a
+                    computer version of the award-winning board game from Eagle Games.
+                </p>
+                <p>
+                    <a href="http://www.runescape.com">Runescape</a>
+                    by Jagex is a massive 3D multiplayer fantasy adventure game. Clients can use a Java applet to play,
+                    or download a Windows-based client application.
+                </p>
+                <p>
+                    <a href="http://www.lucasarts.com/products/galaxies">Star Wars Galaxies</a>
+                    from LucasArts has its game logic coded in Java.
+                </p>
+                <p>
+                    <a href="http://www.il2sturmovik.com">IL-2 Sturmovikand</a>
+                    the new version IL2-Forgotten Battles by Ubi-Soft. Award winning WW I aerial combat using Java and
+                    C++.
+                </p>
+                <p>
+                    <a href="http://www.starfireresearch.com/pernica/pernica.html">Pernica</a>
+                    by Starfire Research. An online fantasy role-playing game first implemented in Java 3D, recently
+                    ported to Xith3D.
+                </p>
+                <p>
+                    <a href="http://www.cosm-game.com">Cosm</a>
+                    from Navtools, Inc. Another fun online fantasy-based role-playing game.
+                </p>
+                <p><a href="http://www.eagames.com/free/home.jsp">C&amp;C Attack Copter</a>. A free online action game
+                    based
+                    on the Command &amp; Conquer series from Electronic Arts.
+                </p>
+                <p>
+                    <a href="http://www.roboforge.com">Roboforge</a>
+                    by Liquid Edge Games. Train a 3D robot to fight in online tounaments. It was given an "Excellent
+                    87%" by PC Gamer Magazine.
+                </p>
+                <p>
+                    <a href="http://www.galactic-village.com">Galactic Village</a>
+                    by Galactic Village Games, a massively multiplayer strategy game, written entirely in Java. Not yet
+                    finished, although alpha versions have been appearing.
+                </p>
+                <p>
+                    <a href="http://www.wurmonline.com">Wurm Online</a>
+                    by Mojang Specifications. Another massively multiplayer fantasy game, written in Java. Still at the
+                    alpha stages of development, but the screenshots look great.
+                </p>
+                <p>
+                    <a href="http://www.jellyvision.com">Jellyvision</a>
+                    used a mix of Java and C++ in their popular Who wants to be a Millionaire (2000) and You don't know
+                    Jack
+                    (1995) games. They employed Java for the game logic, an approach also used in Majestic (2001) by
+                    Electronic Arts.
+                </p>
+                <p>Java was utilized as a scripting language in the acclaimed Vampire - the Masquerade: Redemption
+                    (2000) from<a href="http://www.nihilistic.com">Nihilistic software</a>.
+                </p>
+                <p>Tom Clancy's Politika (1997) from
+                    <a href="(http://www.redstorm.com">Red Storm Entertainment</a>
+                    was written in almost pure Java. Both Shadow Watch (2000) and Tom Clancy's ruthless.com (1998)
+                    mixed Java and C/C++.
+                </p>
+                <p>A good source for non-technical lists of Java games, both commercial and freeware/shareware, can be
+                    found on the
+                    <a href="http://www.java.com/en/lifestyle/games">Java games pages</a>
+                    at java.com. It divides games into several categories: action, adventure, strategy, puzzle, cards,
+                    sports, and so on.
+                </p>
+                <p>There are many, many Java games out on the Web, but finding a game that's well written requires a
+                    careful search. Many applets date from the late 1990's, and were
+                    designed using the outdated JDK 1.0 and 1.1 with their feeble media APIs (graphics, sounds, etc).
+                    The initial Java euphoria produced some less than exciting games, more concerned with technical
+                    trickery. This large pool of useless applets got Java labelled as a toy language.
+                </p>
+                <p>Recent versions of Java are quite different: speed is vastly improved, and APIs crucial to gaming,
+                    such as graphics and audio, are of a high quality. There's been a move away from applets towards the
+                    downloading of client-side applications using Java Web Start.
+                </p>
+                <p>Java's backwards compatibility allows the applets from 1996-8 to be executed, and they'll often run
+                    quicker than originally. However, it's probably best to steer clear of these Java dinosaurs, and
+                    look for more modern code.
+                </p>
+                <p>There are numerous Web sites with free/shareware Java games. The emphasis of the following list is on
+                    applications/applets for playing:
+                </p>
+                <ul>
+                    <li>
+                        <a href="http://grexengine.com/sections/externalgames">Java Games Factory</a>
+                        (JGF). There aren't many games at this site (about 50), but they're all high quality. The aim is
+                        to show off the variety of modern Java game technologies.
+                    </li>
+                    <li><a href="http://www.arcadepod.com/java">ArcadePod.com</a>, Over 750 Java games, nicely
+                        categorized.
+                    </li>
+                    <li><a href="http://www.java4fun.com/java.html">Java 4 Fun</a>, Similar in style to ArcadePod, and a
+                        good set of links to other sites.
+                    </li>
+                    <li><a href="http://www.jars.com">jars.com</a>, A general Java site with a ratings scheme. There are
+                        many games, but a lot of them are old applets.
+                    </li>
+                    <li><a href="http://www.javashareware.com">Java Shareware</a>, Another general site: look under the
+                        categories: applications/games/ and applets/games.
+                    </li>
+                    <li><a href="http://www.mnsi.net/%7Erkerr">Java Games Central</a>, A personal Web site which lists
+                        games with ratings and links. It was last updated in 2001.
+                    </li>
+                </ul>
+                <p>Some good freeware/shareware games at the moment:</p>
+                <ul>
+                    <li>Super Elvis (also known as Hallucinogenesis) by<a href="http://puppygames.net">
+                        puppygames.net</a>,
+                        which won the Sun Microsystems 2004 Technology Game Development Contest. Super Elvis
+                        <a href="http://www.puppygames.net/downloads/hallucinogenesis/hallucinogenesis.jnlp">can be
+                            downloaded using Java Web Start
+                        </a>
+                    </li>
+                    <li><a href="http://www.flyingguns.com">FlyingGuns</a>, a 3D multiplayer WW1 fighter plane
+                        game/simulator.
+                    </li>
+                    <li><a href="http://www.mycgiserver.com/%7Emovegaga/cosmictrip.html">Cosmic Trip</a>, an arcade
+                        style 3D game with striking graphics.
+                    </li>
+                    <li>
+                        <a href="http://home.halden.net/tombr/squareheads/squareheads.html">Squareheads</a>
+                        a multiplayer FPS (it came third in the developer contest).
+                    </li>
+                    <li><a href="http://javaisdoomed.sourceforge.net">Escape</a>, a Doom-like FPS.
+                    </li>
+                    <li><a href="http://membres.lycos.fr/franckcalzada/Billard3D/Pool.html">CazaPool3D</a>, a pool game
+                        that allows online (single/multiplayer) play in an applet or as a standalone application.
+                    </li>
+                </ul>
+                <p>Programmers looking for source code should start at one of the following sites:</p>
+                <ul>
+                    <li><a href="http://sourceforge.net/search">SourceForge</a>, SourceForge acts as a repository, and
+                        management tool, for software projects, many with source code. A recent search for (java + game)
+                        returned over 70 projects that had 40% or greater activity. One of the drawbacks of SourceForge
+                        is
+                        that it can be quite difficult to decide whether a project is vaporware or not. Good projects,
+                        which have been completed, will show low activity after a time, dropping down the list of search
+                        results.
+                    </li>
+                    <li><a href="http://freshmeat.net/">FreshMeat.com</a>, Freshmeat maintains thousands of
+                        applications,
+                        most released under open source licenses. The search facilities are excellent, and can be guided
+                        by
+                        game category terms. The results include rating, vitality, and popularity figures for each piece
+                        of
+                        software. A recent search for Java in the Games/Entertainment category returned nearly 70 hits.
+                    </li>
+                    <li><a href="http://www.javagaming.org/cgibin/JGNetForums/YaBB.cgi?board=Announcements">The "Your
+                        Games Here" Java Games Forum</a>, Implementors can post links to their games, and (perhaps
+                        more importantly) users can post their opinions as follow-ups.
+                    </li>
+                    <li><a href="http://www.codebeach.com">Code Beach</a>, CodeBeach has a searchable subsection for
+                        Java games that currently contains nearly 90 example.
+                    </li>
+                    <li><a href="http://www.programmersheaven.com/zone13">Programmers Heaven</a>, It has a "Java zone"
+                        containing some games.
+                    </li>
+                </ul>
+
+            </answer>
+
+        </faq>
+
+    </part>
+
+
+</faqs>
