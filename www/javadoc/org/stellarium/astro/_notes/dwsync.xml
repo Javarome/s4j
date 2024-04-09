@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+    <file name="Constellation.html" local="128100893464843750" remote="128100896330000000" testing="0"/>
+    <file name="ConstellationMgr.html" local="128100893465468750" remote="128100896350000000" testing="0"/>
+    <file name="HipStar.EnglishNameComparator.html" local="128100893467500000" remote="128100896400000000" testing="0"/>
+    <file name="HipStar.html" local="128100893467031250" remote="128100896430000000" testing="0"/>
+    <file name="HipStar.MagnitudeComparator.html" local="128100893467656250" remote="128100896450000000" testing="0"/>
+    <file name="HipStar.ScientificNameComparator.html" local="128100893467968750" remote="128100896470000000"
+          testing="0"/>
+    <file name="HipStar.SpectralType.html" local="128100893468437500" remote="128100896500000000" testing="0"/>
+    <file name="HipStarMgr.html" local="128100893469843750" remote="128100896540000000" testing="0"/>
+    <file name="HipStarMgrTest.html" local="128100893470312500" remote="128100896550000000" testing="0"/>
+    <file name="JulianDay.html" local="128100893470468750" remote="128100896570000000" testing="0"/>
+    <file name="MeteorMgr.html" local="128100893472500000" remote="128100896640000000" testing="0"/>
+    <file name="MilkyWay.html" local="128100893472656250" remote="128100896650000000" testing="0"/>
+    <file name="Nebula.html" local="128100893473593750" remote="128100896690000000" testing="0"/>
+    <file name="Nebula.NebulaType.html" local="128100893473750000" remote="128100896710000000" testing="0"/>
+    <file name="NebulaMgr.Catalogs.html" local="128100893474218750" remote="128100896720000000" testing="0"/>
+    <file name="NebulaMgr.html" local="128100893474062500" remote="128100896730000000" testing="0"/>
+    <file name="package-frame.html" local="128100893634687500" remote="128100896830000000" testing="0"/>
+    <file name="package-summary.html" local="128100893635156250" remote="128100896840000000" testing="0"/>
+    <file name="package-tree.html" local="128100893635156250" remote="128100896860000000" testing="0"/>
+    <file name="package-use.html" local="128100893752968750" remote="128100896870000000" testing="0"/>
+    <file name="Planet.html" local="128100893476562500" remote="128100900700000000" testing="0"/>
+    <file name="Planet.Ring.html" local="128100893477031250" remote="128100900730000000" testing="0"/>
+    <file name="SideralTime.html" local="128100893477343750" remote="128100900770000000" testing="0"/>
+    <file name="SolarSystem.html" local="128100893477812500" remote="128100900800000000" testing="0"/>
+    <file name="AbstractAstroMgrTest.html" local="128100893464062500" remote="128100895820000000" testing="0"/>
+    <file name="ConstellationMgrTest.html" local="128100893466406250" remote="128100896360000000" testing="0"/>
+    <file name="HipStar.CommonNamesManager.html" local="128100893467343750" remote="128100896380000000" testing="0"/>
+    <file name="HipStar.DoubleFlagManager.html" local="128100893467343750" remote="128100896390000000" testing="0"/>
+    <file name="HipStar.FlagManager.html" local="128100893467656250" remote="128100896420000000" testing="0"/>
+    <file name="HipStar.NamesManager.html" local="128100893467812500" remote="128100896460000000" testing="0"/>
+    <file name="HipStar.ScientificNamesManager.html" local="128100893468125000" remote="128100896490000000"
+          testing="0"/>
+    <file name="HipStar.VariableFlagManager.html" local="128100893469062500" remote="128100896510000000" testing="0"/>
+    <file name="JulianDay.LNDate.html" local="128100893470468750" remote="128100896580000000" testing="0"/>
+    <file name="JulianDay.TimeT.html" local="128100893470937500" remote="128100896590000000" testing="0"/>
+    <file name="JulianDay.TM.html" local="128100893471093750" remote="128100896610000000" testing="0"/>
+    <file name="Meteor.html" local="128100893471718750" remote="128100896620000000" testing="0"/>
+    <file name="Misc.html" local="128100893472812500" remote="128100896660000000" testing="0"/>
+    <file name="Nutation.html" local="128100893474687500" remote="128100896750000000" testing="0"/>
+    <file name="Nutation.lnNutation.html" local="128100893474687500" remote="128100896790000000" testing="0"/>
+    <file name="Nutation.nutationArguments.html" local="128100893475312500" remote="128100896810000000" testing="0"/>
+    <file name="Nutation.nutationCoefficients.html" local="128100893475312500" remote="128100896820000000" testing="0"/>
+    <file name="Planet.RotationElements.html" local="128100893477187500" remote="128100900740000000" testing="0"/>
+    <file name="Planet.TrailPoint.html" local="128100893477187500" remote="128100900760000000" testing="0"/>
+    <file name="SolarSystem.BiggerDistanceComparator.html" local="128100893477968750" remote="128100900780000000"
+          testing="0"/>
+</dwsync>

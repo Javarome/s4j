@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+    <file name="Earth.html" local="128100893505781250" remote="128100898610000000" testing="0"/>
+    <file name="EclipticHelioFunc.html" local="128100893505937500" remote="128100898630000000" testing="0"/>
+    <file name="GalileanMoons.CallistoParentCoords.html" local="128100893506250000" remote="128100898640000000"
+          testing="0"/>
+    <file name="GalileanMoons.GanymedeParentCoords.html" local="128100893506250000" remote="128100898680000000"
+          testing="0"/>
+    <file name="GalileanMoons.html" local="128100893506093750" remote="128100898700000000" testing="0"/>
+    <file name="GalileanMoons.IoParentCoords.html" local="128100893506406250" remote="128100898720000000" testing="0"/>
+    <file name="Jupiter.html" local="128100893506875000" remote="128100898730000000" testing="0"/>
+    <file name="Lunar.GeoFunc.html" local="128100893509687500" remote="128100898810000000" testing="0"/>
+    <file name="Lunar.html" local="128100893508750000" remote="128100898870000000" testing="0"/>
+    <file name="LunarTestCase.html" local="128100893511406250" remote="128100899010000000" testing="0"/>
+    <file name="Mars.html" local="128100893511562500" remote="128100899030000000" testing="0"/>
+    <file name="Mercury.html" local="128100893513593750" remote="128100899100000000" testing="0"/>
+    <file name="MiscStellPlanet.html" local="128100893514531250" remote="128100899260000000" testing="0"/>
+    <file name="MiscStellPlanet.ZeroFunc.html" local="128100893514687500" remote="128100899280000000" testing="0"/>
+    <file name="Neptune.html" local="128100893514687500" remote="128100899290000000" testing="0"/>
+    <file name="OsulatingFunc.html" local="128100893514843750" remote="128100899310000000" testing="0"/>
+    <file name="package-frame.html" local="128100893635625000" remote="128100899320000000" testing="0"/>
+    <file name="package-summary.html" local="128100893635625000" remote="128100899340000000" testing="0"/>
+    <file name="package-tree.html" local="128100893636093750" remote="128100899370000000" testing="0"/>
+    <file name="package-use.html" local="128100893753125000" remote="128100899380000000" testing="0"/>
+    <file name="Pluto.HelioCoordsFunc.html" local="128100893515156250" remote="128100899400000000" testing="0"/>
+    <file name="Pluto.html" local="128100893515156250" remote="128100899420000000" testing="0"/>
+    <file name="PosFunc.html" local="128100893517656250" remote="128100899500000000" testing="0"/>
+    <file name="Saturn.html" local="128100893517812500" remote="128100899520000000" testing="0"/>
+    <file name="Uranus.html" local="128100893518437500" remote="128100899900000000" testing="0"/>
+    <file name="Venus.html" local="128100893520468750" remote="128100900070000000" testing="0"/>
+    <file name="Vsop87.html" local="128100893520625000" remote="128100900140000000" testing="0"/>
+    <file name="GalileanMoons.EuropaParentCoords.html" local="128100893506250000" remote="128100898660000000"
+          testing="0"/>
+    <file name="Jupiter.Longitudes.html" local="128100893507812500" remote="128100898750000000" testing="0"/>
+    <file name="Lunar.DataReader.html" local="128100893508906250" remote="128100898770000000" testing="0"/>
+    <file name="Lunar.EarthPert.html" local="128100893509687500" remote="128100898790000000" testing="0"/>
+    <file name="Lunar.MainProblem.html" local="128100893509843750" remote="128100898890000000" testing="0"/>
+    <file name="Lunar.MoonPert.html" local="128100893509843750" remote="128100898910000000" testing="0"/>
+    <file name="Lunar.PlanetPert.html" local="128100893510468750" remote="128100898920000000" testing="0"/>
+    <file name="Lunar.PlanSolPert.html" local="128100893510781250" remote="128100898940000000" testing="0"/>
+    <file name="Lunar.ReadStrategy.html" local="128100893510937500" remote="128100898960000000" testing="0"/>
+    <file name="Lunar.RelPert.html" local="128100893511093750" remote="128100898970000000" testing="0"/>
+    <file name="Lunar.TidalEffects.html" local="128100893511093750" remote="128100898990000000" testing="0"/>
+    <file name="Mars.Latitudes.html" local="128100893512968750" remote="128100899040000000" testing="0"/>
+    <file name="Mars.Longitude0.html" local="128100893512968750" remote="128100899060000000" testing="0"/>
+    <file name="Mars.Longitude1.html" local="128100893513125000" remote="128100899080000000" testing="0"/>
+    <file name="Mercury.Latitude0.html" local="128100893513593750" remote="128100899120000000" testing="0"/>
+    <file name="Mercury.Latitude1.html" local="128100893513750000" remote="128100899130000000" testing="0"/>
+    <file name="Mercury.Latitude2.html" local="128100893513906250" remote="128100899150000000" testing="0"/>
+    <file name="Mercury.Longitude0.html" local="128100893513906250" remote="128100899160000000" testing="0"/>
+    <file name="Mercury.Longitude1.html" local="128100893514218750" remote="128100899180000000" testing="0"/>
+    <file name="Mercury.Longitude2.html" local="128100893514375000" remote="128100899200000000" testing="0"/>
+    <file name="Mercury.Longitude3.html" local="128100893514375000" remote="128100899210000000" testing="0"/>
+    <file name="Mercury.Longitude4.html" local="128100893514375000" remote="128100899230000000" testing="0"/>
+    <file name="Mercury.Longitude5.html" local="128100893514531250" remote="128100899240000000" testing="0"/>
+    <file name="Pluto.PlutoArgument.html" local="128100893516093750" remote="128100899430000000" testing="0"/>
+    <file name="Pluto.PlutoLatitude.html" local="128100893516093750" remote="128100899460000000" testing="0"/>
+    <file name="Pluto.PlutoLongitude.html" local="128100893516562500" remote="128100899470000000" testing="0"/>
+    <file name="Pluto.PlutoRadius.html" local="128100893517187500" remote="128100899490000000" testing="0"/>
+    <file name="Saturn.Latitudes.html" local="128100893517968750" remote="128100899550000000" testing="0"/>
+    <file name="Saturn.Longitude0.html" local="128100893517968750" remote="128100899710000000" testing="0"/>
+    <file name="Saturn.Longitude1.html" local="128100893518281250" remote="128100899830000000" testing="0"/>
+    <file name="Uranus.Latitudes.html" local="128100893520000000" remote="128100899950000000" testing="0"/>
+    <file name="Uranus.Longitudes.html" local="128100893520312500" remote="128100899990000000" testing="0"/>
+</dwsync>

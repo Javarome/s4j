@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+    <file name="CustomProjector.html" local="128100893739062500" remote="128100903930000000" testing="0"/>
+    <file name="CylinderProjector.html" local="128100893739062500" remote="128100903940000000" testing="0"/>
+    <file name="DefaultProjector.AutoZoom.html" local="128100893738437500" remote="128100903950000000" testing="0"/>
+    <file name="DefaultProjector.html" local="128100893737812500" remote="128100903980000000" testing="0"/>
+    <file name="DefaultProjector.ProjectEarthEqu.html" local="128100893738750000" remote="128100903990000000"
+          testing="0"/>
+    <file name="DefaultProjector.ProjectJ2000.html" local="128100893739062500" remote="128100904000000000" testing="0"/>
+    <file name="DefaultProjector.ProjectLocal.html" local="128100893738437500" remote="128100904010000000" testing="0"/>
+    <file name="DefaultProjector.PROJECTOR_MASK_TYPE.html" local="128100893738437500" remote="128100904030000000"
+          testing="0"/>
+    <file name="FisheyeProjector.html" local="128100893737656250" remote="128100904050000000" testing="0"/>
+    <file name="Projector.html" local="128100893736562500" remote="128100904090000000" testing="0"/>
+    <file name="Projector.ProjFunc.html" local="128100893737656250" remote="128100904100000000" testing="0"/>
+    <file name="Projector.TYPE.html" local="128100893737656250" remote="128100904120000000" testing="0"/>
+    <file name="SphericMirrorCalculator.html" local="128100893736406250" remote="128100904130000000" testing="0"/>
+    <file name="SphericMirrorProjector.html" local="128100893736250000" remote="128100904140000000" testing="0"/>
+    <file name="StereographicProjector.html" local="128100893736250000" remote="128100904150000000" testing="0"/>
+    <file name="ViewportDistorter.html" local="128100893734687500" remote="128100904160000000" testing="0"/>
+    <file name="ViewportDistorter.ViewportDistorterDummy.html" local="128100893734687500" remote="128100904170000000"
+          testing="0"/>
+    <file name="ViewportDistorter.ViewportDistorterFisheyeToSphericMirror.html" local="128100893735000000"
+          remote="128100904190000000" testing="0"/>
+    <file name="ViewportDistorter.ViewportDistorterFisheyeToSphericMirror.VertexData.html" local="128100893735000000"
+          remote="128100904200000000" testing="0"/>
+</dwsync>

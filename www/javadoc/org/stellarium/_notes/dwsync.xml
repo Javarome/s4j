@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+    <file name="AbstractProjector.AutoZoom.html" local="128073262087812500" remote="128100895730000000" testing="0"/>
+    <file name="AbstractProjector.html" local="128074952056875000" remote="128100895750000000" testing="0"/>
+    <file name="AbstractProjector.PROJECTOR_MASK_TYPE.html" local="128073262093906250" remote="128100895760000000"
+          testing="0"/>
+    <file name="AbstractProjector.PROJECTOR_TYPE.html" local="128074952057343750" remote="128100895770000000"
+          testing="0"/>
+    <file name="Audio.html" local="128100893487656250" remote="128100900960000000" testing="0"/>
+    <file name="CustomProjector.html" local="128074952055937500" remote="128100902280000000" testing="0"/>
+    <file name="CylinderProjector.html" local="128074952055781250" remote="128100902300000000" testing="0"/>
+    <file name="EllipticalOrbit.EllipticalOrbitFunc.html" local="128100893489687500" remote="128100902630000000"
+          testing="0"/>
+    <file name="EllipticalOrbit.html" local="128100893489375000" remote="128100902650000000" testing="0"/>
+    <file name="FisheyeProjector.html" local="128074952056093750" remote="128100902710000000" testing="0"/>
+    <file name="Grid.html" local="128100893490468750" remote="128100902890000000" testing="0"/>
+    <file name="Image.html" local="128073259738906250" remote="128100903060000000" testing="0"/>
+    <file name="Main.html" local="128100893491406250" remote="128100903660000000" testing="0"/>
+    <file name="Navigator.html" local="128100893491718750" remote="128100903720000000" testing="0"/>
+    <file name="Navigator.VIEWING_MODE_TYPE.html" local="128073259739531250" remote="128100903740000000" testing="0"/>
+    <file name="NavigatorIfc.html" local="128100893492031250" remote="128100903760000000" testing="0"/>
+    <file name="Observator.html" local="128100893492500000" remote="128100903800000000" testing="0"/>
+    <file name="package-frame.html" local="128100893633593750" remote="128100903840000000" testing="0"/>
+    <file name="package-summary.html" local="128100893634062500" remote="128100903850000000" testing="0"/>
+    <file name="package-tree.html" local="128100893634687500" remote="128100903860000000" testing="0"/>
+    <file name="package-use.html" local="128100893752968750" remote="128100903880000000" testing="0"/>
+    <file name="Projector.html" local="128073259740000000" remote="128100904610000000" testing="0"/>
+    <file name="SkyBright.html" local="128100893493281250" remote="128100904630000000" testing="0"/>
+    <file name="Skylight.html" local="128100893495000000" remote="128100904670000000" testing="0"/>
+    <file name="Skylight.Struct.html" local="128100893495156250" remote="128100904690000000" testing="0"/>
+    <file name="Skylight.Struct2.html" local="128100893495625000" remote="128100904700000000" testing="0"/>
+    <file name="SphericMirrorCalculator.html" local="128073259741406250" remote="128100904940000000" testing="0"/>
+    <file name="SphericMirrorProjector.html" local="128074952057187500" remote="128100904950000000" testing="0"/>
+    <file name="StelApp.DATE_FORMAT.html" local="128100893498281250" remote="128100904980000000" testing="0"/>
+    <file name="StelApp.DRAWMODE.html" local="128100893498437500" remote="128100905000000000" testing="0"/>
+    <file name="StelApp.html" local="128100893498125000" remote="128100905020000000" testing="0"/>
+    <file name="StelApp.StringCallback.html" local="128073259742812500" remote="128100905020000000" testing="0"/>
+    <file name="StelApp.TIME_FORMAT.html" local="128100893498593750" remote="128100905040000000" testing="0"/>
+    <file name="StelApp.TZ_FORMAT.html" local="128100893498593750" remote="128100905050000000" testing="0"/>
+    <file name="StelCore.html" local="128100893501875000" remote="128100905100000000" testing="0"/>
+    <file name="StellariumException.html" local="128100893502812500" remote="128100905130000000" testing="0"/>
+    <file name="StelObject.html" local="128100893502968750" remote="128100905140000000" testing="0"/>
+    <file name="StelObject.TYPE.html" local="128100893503437500" remote="128100905170000000" testing="0"/>
+    <file name="StelObjectBase.html" local="128100893503750000" remote="128100905190000000" testing="0"/>
+    <file name="StelUtility.Coords.html" local="128100893504218750" remote="128100905200000000" testing="0"/>
+    <file name="StelUtility.html" local="128100893504062500" remote="128100905210000000" testing="0"/>
+    <file name="StereographicProjector.html" local="128074952057500000" remote="128100905240000000" testing="0"/>
+    <file name="STexture.html" local="128073259747656250" remote="128100905250000000" testing="0"/>
+    <file name="Telescope.html" local="128073259747812500" remote="128100905530000000" testing="0"/>
+    <file name="TelescopeMgr.html" local="128073262090156250" remote="128100905560000000" testing="0"/>
+    <file name="ToneReproductor.html" local="128100893505000000" remote="128100905580000000" testing="0"/>
+    <file name="Translator.html" local="128100893505156250" remote="128100905600000000" testing="0"/>
+    <file name="ViewportDistorter.html" local="128073259748750000" remote="128100910710000000" testing="0"/>
+    <file name="ApplicationCallback.html" local="128100893487656250" remote="128100895780000000" testing="0"/>
+    <file name="CachingOrbit.html" local="128100893488437500" remote="128100900980000000" testing="0"/>
+    <file name="CommandLineTest.html" local="128100893488750000" remote="128100902270000000" testing="0"/>
+    <file name="DateTimeTest.html" local="128100893488906250" remote="128100902610000000" testing="0"/>
+    <file name="Draw.html" local="128100893489218750" remote="128100902620000000" testing="0"/>
+    <file name="EllipticalOrbit.SolveKeplerFunc1.html" local="128100893490000000" remote="128100902660000000"
+          testing="0"/>
+    <file name="EllipticalOrbit.SolveKeplerFunc2.html" local="128100893490156250" remote="128100902670000000"
+          testing="0"/>
+    <file name="EllipticalOrbit.SolveKeplerLaguerreConway.html" local="128100893490312500" remote="128100902680000000"
+          testing="0"/>
+    <file name="EllipticalOrbit.SolveKeplerLaguerreConwayHyp.html" local="128100893490312500"
+          remote="128100902690000000" testing="0"/>
+    <file name="Navigator.AutoMove.html" local="128100893491875000" remote="128100903670000000" testing="0"/>
+    <file name="NavigatorIfc.VIEWING_MODE_TYPE.html" local="128100893492187500" remote="128100903780000000"
+          testing="0"/>
+    <file name="Orbit.html" local="128100893492656250" remote="128100903820000000" testing="0"/>
+    <file name="OrbitSampleProc.html" local="128100893493125000" remote="128100903830000000" testing="0"/>
+    <file name="SettingMgr.html" local="128100893493125000" remote="128100904620000000" testing="0"/>
+    <file name="SkyGrid.html" local="128100893494218750" remote="128100904650000000" testing="0"/>
+    <file name="SkyGrid.TYPE.html" local="128100893494843750" remote="128100904660000000" testing="0"/>
+    <file name="SkyLine.html" local="128100893496093750" remote="128100904710000000" testing="0"/>
+    <file name="SkyLine.TYPE.html" local="128100893496093750" remote="128100904720000000" testing="0"/>
+    <file name="SkyLocalizer.html" local="128100893496406250" remote="128100904740000000" testing="0"/>
+    <file name="StateSemaphore.html" local="128100893496562500" remote="128100904970000000" testing="0"/>
+    <file name="StelCore.FontParam.html" local="128100893502343750" remote="128100905060000000" testing="0"/>
+    <file name="StelCore.MOUNT_MODE.html" local="128100893502500000" remote="128100905110000000" testing="0"/>
+    <file name="StelObject.StelObjectUninitialized.html" local="128100893503281250" remote="128100905150000000"
+          testing="0"/>
+    <file name="StelUtility.Type.html" local="128100893504843750" remote="128100905220000000" testing="0"/>
+    <file name="Translator.POResourceBundle.html" local="128100893505468750" remote="128100905620000000" testing="0"/>
+</dwsync>
