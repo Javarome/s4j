@@ -18,7 +18,8 @@ function MM_preloadImages() { //v3.0
 </head>
 <body>
 <h1>FAQ</h1>
-<p>This is the <em>Stellarium for Java</em> FAQ (updated 28/11/2005), which contains answers to the most Frequently Asked Questions about the Stellarium for Java 3D planetarium simulator.</p>
+<p>This is the <em>Stellarium for Java</em> FAQ, which contains answers to the most Frequently Asked Questions about the
+  Stellarium for Java 3D planetarium simulator.</p>
 <h2>Index</h2>
 <h3>General questions</h3>
 <ul>
@@ -72,25 +73,54 @@ function MM_preloadImages() { //v3.0
 <h2><a name="general"></a>General questions</h2>
 <h3><a name="whatis"></a>What is Stellarium for Java?</h3>
 <p>Stellarium is an open source desktop planetarium for Java platforms, including Linux/Unix, Windows and MacOSX. It renders the skies in realtime using OpenGL, which means the skies will look exactly like what you see with your eyes, binoculars, or a small telescope. Stellarium is very simple to use, which is one of its biggest advantages: it can easily be used by beginners.<br>
-The original <a href="http://stellarium.org">Stellarium</a> project was started by Fabien Ch&eacute;reau during the summer of 2001 and uses Sourceforge intensively. </p>
-<p>Stellarium for Java is the Java version of Stellarium. Access the Sourceforge project page <a href="http://sourceforge.net/projects/stellarium4java/">here</a>. </p>
+  The <a href="http://stellarium.org">original Stellarium</a> project was started by Fabien Ch&eacute;reau during the
+  summer of 2001 and uses Sourceforge intensively. </p>
+<p>Stellarium for Java (S4J) is the Java version of Stellarium. Access the Sourceforge project page <a
+  href="http://sourceforge.net/projects/stellarium4java/">here</a>. </p>
 <h3><a name="sync" id="sync"></a>How Stellarium and Stellarium for Java will be sync?</h3>
-<p>Stellarium for Java will check for improvements and new features from Stellarium after each major release, and will integrate them as needed.</p>
+<p>Currently Stellarium for Java is sync with Stellarium 0.8.2. Once that version released as non-beta, the project may
+  check for improvements and new features from the original Stellarium, and integrate them as needed.</p>
 <h3><a name="isitfree"></a>Is Stellarium for Java free?</h3>
-<p>Yes! Stellarium is open source software. Anyone has the right to download and use the software for free, to distribute it without modifying to other people, or modify the source code, all of this under the terms of the <a href="http://www.gnu.org/copyleft/gpl.html">GNU Public License (GPL)</a>.</p>
+<p>Yes. Stellarium is free software in both meanings of the term. That is, available for free and open source : anyone
+  has the right to download, use, distribute and even modify it provided that the terms of its <a
+    href="http://www.gnu.org/copyleft/gpl.html">GNU Public License (GPL)</a> are respected.</p>
 <h3><a name="download"></a>Where can I download Stellarium?</h3>
-<p>Via the <a href="http://stellarium.free.fr/download.html">download page</a>. Stellarium is hosted on Sourceforge servers. After clicking on the right link of the download page, you will be taken to a list of Sourceforge servers, each with their location. Click on the file icon of the one geographically closest to you, it ensures a speedy download.</p>
+<p>Currently Stellarium is available as a <em>Java Web Start</em> application (<a
+  href="http://java.sun.com/javase/6/download.jsp">to be installed first</a>, if you don't have any Java runtime on your
+  host) <a href="http://stellarium4java.sourceforge.net/stellarium4java/jnlp/stellarium.jnlp">from Sourceforge</a> or <a
+    href="https://stellarium4java.dev.java.net/files/documents/4463/87940/stellarium.jnlp">from Java.net</a>. </p>
+<p>Further releases will be available from the <a href="http://stellarium.free.fr/download.html">download page</a> of
+  the Sourceforge servers.</p>
 <h3><a name="feedback"></a>Where can I provide feedback?</h3>
 <p>Your ideas and comments are invaluable to Stellarium. Have a look at <a href="feedbacks.html">the feedback page</a> to see where you can get personal support, ask for new features, report bugs and even submit your own patches.</p>
 <p>&nbsp;</p>
 <h2><a name="java" id="java"></a>Java questions</h2>
 <h3><a name="whatisjava" id="whatisjava"></a>What is Java?</h3>
-<p><a href="http://java.sun.com">Java</a> is a software development and execution plaftorm that allows a sofware to run on many lower-level platforms such as Windows, Linux, MacOS and many others. Java software is run by a JVM (Java Virtual Machine). </p>
+<p><a href="http://java.sun.com">Java</a> is a software plaftorm that allows a sofware to run on many lower-level
+  platforms such as Windows, Linux, MacOS and many others. Java software is run by a JVM (<em>Java Virtual Machine</em>)
+  software that runs on your host. </p>
 <h3><a name="whyjava" id="whyjava"></a>Why a Java version?</h3>
-<p>There is a number of reasons for providing a Java version of Stellarium. Among these are the need for portability accross platforms but also APIs (both OpenGL and Direct3D can be leveraged by <a href="https://java3d.dev.java.net/">Java3D</a>), the opportunity to demonstrate how a complex C++ application can be written using Java (showing the <a href="http://java.sun.com/developer/technicalArticles/releases/j2se15/">latest language features of Java 5</a>, as well as useful APIs such as <a href="https://java3d.dev.java.net/">Java3D</a>, <a href="https://jogl.dev.java.net/">JOGL</a>, <a href="http://java.sun.com/products/jfc">Swing</a>, I18N, and many others), and the need for evolutivity : we believe that there is much more room for evolutions of Stellarium through the Java path that through the C++ path. Aside these benefits is the ability for such an open source project to provide Java developers various software routines of interest for their own GPL software. </p>
+<p>There is a number of reasons for providing a Java version of Stellarium. Among these are :</p>
+<ul>
+  <li><strong>Better portability</strong> accross platforms but also APIs (both OpenGL and Direct3D can be leveraged by
+    <a href="https://java3d.dev.java.net/">Java3D</a>)</li>
+  <li><strong>Demonstrate how a complex C++ application can be written using Java </strong>(showing the <a
+    href="http://java.sun.com/developer/technicalArticles/releases/j2se15/">latest language features of Java 5</a>, as
+    well as useful APIs such as <a href="https://java3d.dev.java.net/">Java3D</a>, <a href="https://jogl.dev.java.net/">JOGL</a>,
+    <a href="http://java.sun.com/products/jfc">Swing</a>, I18N, and many others)</li>
+  <li><strong>Evolutivity </strong>: we believe that there is much more room for evolutions of Stellarium through the
+    Java path that through the C++ path. </li>
+  <li><strong>Provide Java developers various software routines </strong>of interest for their own GPL software. </li>
+</ul>
 <h3><a name="javatooslow" id="javatooslow"></a>Isn't Java too slow?</h3>
-<p>This argument was valid when Java first appeared (around 1996), but has become increasingly false with each new release. Some figures put JDK 1.0 at 20 to 40 times slower than C++. J2SE 1.4.2 is typically 1.1-1.3 times slower, and <a href="http://java.sun.com/j2se/1.5.0">J2SE 1.5</a> (a.k.a. Java 5) is meant to be 1.2 to 1.5 times faster than its predecessor.</p>
-<p>These numbers depend greatly on the coding style used. Java programmers must be good programmers in order to utilise Java efficiently, but that&rsquo;s true of any language. <a href="http://www.javaperformancetuning.com">Jack Shirazi's Java Performance Tuning site</a> is a good source for performance tips, and links to tools and other resources.</p>
+<p>This argument was valid when the first releases of Java appeared (around 1996), but has become increasingly false
+  with each new release. Some figures put JDK 1.0 at 20 to 40 times slower than C++. J2SE 1.4.2 is typically 1.1-1.3
+  times slower, and <a href="http://java.sun.com/j2se/1.5.0">J2SE 1.5</a> (a.k.a. Java 5) is meant to be 1.2 to 1.5
+  times faster than its predecessor. S4J now runs on Java 1.6 (a.k.a Java 6). </p>
+<p>Note that these numbers depend greatly on the code quality. Java programmers must be good programmers in order to
+  utilise Java efficiently, but that&rsquo;s true of any language. <a href="http://www.javaperformancetuning.com">Jack
+    Shirazi's Java Performance Tuning site</a> is a good source for performance tips, and links to tools and other
+  resources.</p>
 <p>A benchmarking of Java vs C++ by Keith Lea caused quite a <a href="http://www.theserverside.com/news/thread.tss?thread_id=26634">stir</a>. He found that Java may sometimes be faster than C++. </p>
 <p>The speed-up in Java is mostly due to improvements in compiler design. The <a href="http://java.sun.com/products/hotspot/">Hotspot</a> technology introduced in J2SE 1.3 enables the run-time system to identify crucial areas of code that are utilised many times, and these are aggressively compiled. Hotspot technology has the unfortunate side-effect that program execution is often slow at the beginning until the code has been analyzed and compiled.</p>
 <p><a href="http://java.sun.com/products/jfc">Swing</a> often comes under attack for being slow. Swing GUI components are created and controlled from Java, with little OS support: this increases their portability and makes them more controllable from within a Java program. Speed is supposedly compromised because Java imposes an extra layer of processing above the OS. This is one reason why some games applications still utilise the original Abstract Windowing Toolkit (AWT) &ndash; it's mostly just simple wrapper methods around OS calls.<br>

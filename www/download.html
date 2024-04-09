@@ -1,12 +1,9 @@
 <html>
 <head>
-<title>Stellarium for Java</title>
+  <title>Stellarium for Java Download</title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 <script language="JavaScript" type="text/JavaScript">
 <!--
-
-
-
 function MM_preloadImages() { //v3.0
   var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
     var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
@@ -20,25 +17,31 @@ function MM_preloadImages() { //v3.0
 <h1>Download</h1>
 <h2>Requirements</h2>
 <ul>
-<li><a href="http://java.sun.com/j2se/1.5.0/download.jsp">J2SE Runtime Environment (JRE) 5.0</a> or higher.</li>
-<li><a href="https://java3d.dev.java.net/">Java 3D</a> 1.3 or higher. </li>
-<li><a href="https://jogl.dev.java.net/">JOGL</a> 1.1.1 or higher</li>
-<li>A 3D Card with a support for <a href="http://www.opengl.org">OpenGL</a> or Direct3X. At least a Voodoo3 or a TNT2 is recommended for smooth animation.</li>
+  <li><a href="http://java.sun.com/javase/downloads/index.jsp">J2SE Runtime Environment (JRE) 6.0</a> or higher.</li>
+  <li><a href="https://java3d.dev.java.net/">Java 3D</a> 1.5.0 or higher. </li>
+  <li><a href="https://jogl.dev.java.net/">JOGL</a> 1.1.0 or higher</li>
+  <li>A 3D Graphics Card with a support for <a href="http://www.opengl.org">OpenGL</a>.</li>
 <li>A dark room for realistic rendering : details like the Milky Way or star twinkling can't be seen in a bright room.</li>
 </ul>
-<h2>Download</h2>
-<p>No executable version of Stellarium for Java is downloadable yet. Please see the <a href="http://stellarium.org/download.html" target="_top">original Stellarium executables download page</a>. </p>
-<h2>CVS version</h2>
-<p>The CVS version is now obsolete. See the <a href="#SVN">SVN version</a>.</p>
-<h2><a name="SVN"></a>SVN version</h2>
-<p>You can browse the SVN trunk tree from <a href="http://svn.sourceforge.net/viewcvs.cgi/stellarium4java/">here</a>.<br>
+<h2>Executable</h2>
+<p>An alpha online release is now available. <em>Make sure you have <a
+  href="http://java.sun.com/products/javawebstart/">Java Web Start</a> installed</em> (if you don't, <a
+  href="http://java.sun.com/javase/6/download.jsp">download a JRE</a> now), then run the JWS link below: </p>
+<ul>
+  <li><a href="http://stellarium4java.sourceforge.net/stellarium4java/trunk/jnlp/stellarium-web.jnlp"><strong>S4J from
+    Sourceforge</strong></a></li>
+</ul>
+<p>Should you have any problem, please check <a href="http://www.jfrog.org/jira/browse/STEL">our JIRA</a>, and fill an
+  issue if you don't find an answer. </p>
+<h2><a name="SVN"></a>Source code</h2>
+<p>You can browse the <a href="http://stellarium4java.svn.sourceforge.net/viewvc/stellarium4java/trunk">SVN trunk
+  tree</a> (the CVS tree is obsolete). <br>
 To get the latest SVN snapshot (from sourceforge) just checkout (using Tortoise SVN) or (using Tigris SubVersion command line tools) type in a console: </p>
-<p><code> svn co https://svn.sourceforge.net/svnroot/stellarium4java stellarium4java</code></p>
+<p><code> svn co https://stellarium4java.svn.sourceforge.net/svnroot/stellarium4java stellarium4java</code></p>
 <p>then to build from the sources, type: </p>
 <p><code> cd stellarium4java<br>
 ant</code></p>
 <p>finally try a local run: </p>
-<p><code> cd classes<br>
-java Main</code></p>
+<p><code> cd classes<br> java org.stellarium.Main</code></p>
 </body>
 </html>
