@@ -1,0 +1,1168 @@
+<html>
+<head>
+<title>Stellarium for Java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script language="JavaScript" type="text/JavaScript">
+<!--
+
+
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+//-->
+</script>
+<link href="stellarium.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<h1>FAQ</h1>
+<p>This is the <em>Stellarium for Java</em> FAQ (updated 28/11/2005), which contains answers to the most Frequently Asked Questions about the Stellarium for Java 3D planetarium simulator.</p>
+<h2>Index</h2>
+<h3>General questions</h3>
+<ul>
+<li><a href="#whatis">What is Stellarium for Java?</a></li>
+<li><a href="#sync">How Stellarium and Stellarium for Java will be sync?</a></li>
+<li><a href="#isitfree">Is Stellarium for Java free?</a></li>
+<li><a href="#download">Where can I download Stellarium?</a></li>
+<li><a href="#feedback">Where can I provide feedback?</a></li>
+</ul>
+<h3>Java questions</h3>
+<ul>
+<li><a href="#whatisjava">What is Java?</a></li>
+<li><a href="#whyjava">Why a Java version of Stellarium?</a></li>
+<li><a href="#javatooslow">Isn't Java too slow?</a></li>
+<li><a href="#javamemoryleaks">Hasn't Java memory leaks?</a></li>
+<li><a href="#javatoohighlevel">Isn't Java too high level?</a></li>
+<li><a href="#graphicsor3D">Is anyone using Java to write graphics-intensive or 3D software?</a></li>
+<li><a href="#WhyJOGL">Why choosing JOGL?</a></li>
+</ul>
+<h3>Installing Stellarium for Java </h3>
+<ul>
+<li><a href="#requirements">What are Stellarium's system requirements?</a></li>
+<li><a href="#install">How do I install Stellarium?</a></li>
+<li><a href="#uninstall">How do I uninstall Stellarium?</a></li>
+</ul>
+<h3>Using Stellarium for Java </h3>
+<ul>
+<li><a href="#quickstart">How do I start using Stellarium?</a></li>
+<li><a href="#keys">What are the available keyboard controls?</a></li>
+<li><a href="#resolution">How do I change the screen resolution to one that isn't specified in the menu?</a></li>
+<li><a href="#config">What do all those values in the configuration file mean?</a></li>
+</ul>
+<h3>Customization</h3>
+<ul>
+<li><a href="#changelandscape">How do I change the landscape?</a> </li>
+<li><a href="#adddeepsky">How do I show my own deep sky objects in Stellarium?</a></li>
+<li><a href="#landscapeskin">How do I make my own landscape skin for Stellarium?</a></li>
+<li><a href="#changeconstart">How do I use other constellation art in Stellarium?</a></li>
+<li><a href="#moreobjects">Is it possible to show more stars?</a></li>
+<li><a href="#language">Is Stellarium available in my language?</a></li>
+<li><a href="#customizable">What are the files I can customize?</a></li>
+</ul>
+<h3>Problems</h3>
+<ul>
+<li><a href="#installprob">I can't install Stellarium.</a></li>
+<li><a href="#doesnotrun">Stellarium installs, but does not run. </a></li>
+<li><a href="#slow">I get very slow rendering, very low framerates on my computer.</a></li>
+<li><a href="#crash">Stellarium crashes after it has been running for a while.</a></li>
+</ul>
+<p>&nbsp;</p>
+<h2><a name="general"></a>General questions</h2>
+<h3><a name="whatis"></a>What is Stellarium for Java?</h3>
+<p>Stellarium is an open source desktop planetarium for Java platforms, including Linux/Unix, Windows and MacOSX. It renders the skies in realtime using OpenGL, which means the skies will look exactly like what you see with your eyes, binoculars, or a small telescope. Stellarium is very simple to use, which is one of its biggest advantages: it can easily be used by beginners.<br>
+The original <a href="http://stellarium.org">Stellarium</a> project was started by Fabien Ch&eacute;reau during the summer of 2001 and uses Sourceforge intensively. </p>
+<p>Stellarium for Java is the Java version of Stellarium. Access the Sourceforge project page <a href="http://sourceforge.net/projects/stellarium4java/">here</a>. </p>
+<h3><a name="sync" id="sync"></a>How Stellarium and Stellarium for Java will be sync?</h3>
+<p>Stellarium for Java will check for improvements and new features from Stellarium after each major release, and will integrate them as needed.</p>
+<h3><a name="isitfree"></a>Is Stellarium for Java free?</h3>
+<p>Yes! Stellarium is open source software. Anyone has the right to download and use the software for free, to distribute it without modifying to other people, or modify the source code, all of this under the terms of the <a href="http://www.gnu.org/copyleft/gpl.html">GNU Public License (GPL)</a>.</p>
+<h3><a name="download"></a>Where can I download Stellarium?</h3>
+<p>Via the <a href="http://stellarium.free.fr/download.html">download page</a>. Stellarium is hosted on Sourceforge servers. After clicking on the right link of the download page, you will be taken to a list of Sourceforge servers, each with their location. Click on the file icon of the one geographically closest to you, it ensures a speedy download.</p>
+<h3><a name="feedback"></a>Where can I provide feedback?</h3>
+<p>Your ideas and comments are invaluable to Stellarium. Have a look at <a href="feedbacks.html">the feedback page</a> to see where you can get personal support, ask for new features, report bugs and even submit your own patches.</p>
+<p>&nbsp;</p>
+<h2><a name="java" id="java"></a>Java questions</h2>
+<h3><a name="whatisjava" id="whatisjava"></a>What is Java?</h3>
+<p><a href="http://java.sun.com">Java</a> is a software development and execution plaftorm that allows a sofware to run on many lower-level platforms such as Windows, Linux, MacOS and many others. Java software is run by a JVM (Java Virtual Machine). </p>
+<h3><a name="whyjava" id="whyjava"></a>Why a Java version?</h3>
+<p>There is a number of reasons for providing a Java version of Stellarium. Among these are the need for portability accross platforms but also APIs (both OpenGL and Direct3D can be leveraged by <a href="https://java3d.dev.java.net/">Java3D</a>), the opportunity to demonstrate how a complex C++ application can be written using Java (showing the <a href="http://java.sun.com/developer/technicalArticles/releases/j2se15/">latest language features of Java 5</a>, as well as useful APIs such as <a href="https://java3d.dev.java.net/">Java3D</a>, <a href="https://jogl.dev.java.net/">JOGL</a>, <a href="http://java.sun.com/products/jfc">Swing</a>, I18N, and many others), and the need for evolutivity : we believe that there is much more room for evolutions of Stellarium through the Java path that through the C++ path. Aside these benefits is the ability for such an open source project to provide Java developers various software routines of interest for their own GPL software. </p>
+<h3><a name="javatooslow" id="javatooslow"></a>Isn't Java too slow?</h3>
+<p>This argument was valid when Java first appeared (around 1996), but has become increasingly false with each new release. Some figures put JDK 1.0 at 20 to 40 times slower than C++. J2SE 1.4.2 is typically 1.1-1.3 times slower, and <a href="http://java.sun.com/j2se/1.5.0">J2SE 1.5</a> (a.k.a. Java 5) is meant to be 1.2 to 1.5 times faster than its predecessor.</p>
+<p>These numbers depend greatly on the coding style used. Java programmers must be good programmers in order to utilise Java efficiently, but that&rsquo;s true of any language. <a href="http://www.javaperformancetuning.com">Jack Shirazi's Java Performance Tuning site</a> is a good source for performance tips, and links to tools and other resources.</p>
+<p>A benchmarking of Java vs C++ by Keith Lea caused quite a <a href="http://www.theserverside.com/news/thread.tss?thread_id=26634">stir</a>. He found that Java may sometimes be faster than C++. </p>
+<p>The speed-up in Java is mostly due to improvements in compiler design. The <a href="http://java.sun.com/products/hotspot/">Hotspot</a> technology introduced in J2SE 1.3 enables the run-time system to identify crucial areas of code that are utilised many times, and these are aggressively compiled. Hotspot technology has the unfortunate side-effect that program execution is often slow at the beginning until the code has been analyzed and compiled.</p>
+<p><a href="http://java.sun.com/products/jfc">Swing</a> often comes under attack for being slow. Swing GUI components are created and controlled from Java, with little OS support: this increases their portability and makes them more controllable from within a Java program. Speed is supposedly compromised because Java imposes an extra layer of processing above the OS. This is one reason why some games applications still utilise the original Abstract Windowing Toolkit (AWT) &ndash; it's mostly just simple wrapper methods around OS calls.<br>
+<br>
+A crucial point about speed is knowing what to blame when a program runs slowly. Typically, a large part of the graphics rendering of a game is handled by hardware or software outside of Java. For example, Java 3D passes its rendering tasks down to OpenGL or Direct3X, which may emulate hardware capabilities such as bump mapping. Often the performance bottleneck in network games is the network.</p>
+<h3><a name="javamemoryleaks" id="javamemoryleaks"></a>Hasn't Java memory leaks?</h3>
+<p>When C/C++ programmers refer to memory leaks in Java, it may mean that they don't understand how Java works. Java doesn't offer pointer arithmetic, and typical C-style memory leaks such as out-of-bounds array accesses are caught by the Java compiler. However, they may mean that objects which are no longer needed by the program are not being garbage collected. This becomes an issue if the program keeps creating new objects, requiring more memory, and eventually crashes when the maximum allocation is exceeded.</p>
+<p>This kind of problem is a consequence of bad programming style, since the garbage collector can only do its job when an object is completely dereferenced (i.e. the program no longer refers to it). A good profiling tool, such as <a href="http://www.ej-technologies.com/products/jprofiler/overview.html">JProfiler</a>, can be a great help in identifying code using excessive amounts of memory. JProfiler is a commercial product; many open source profilers are <a href="http://java-source.net">available</a>. </p>
+<p>Another memory related complaint is that the garbage collector is executing at poorly timed intervals, causing the application to halt for seconds while the collector sweeps and cleans.</p>
+<p>The JVM comes with several different garbage collectors, which collect in various ways, and can be selected and fine-tuned from the command line. Information on the performance of the chosen collector can be gathered and analysed. A good hands-on explanation of this topic, centered around the <a href="http://www-106.ibm.com/developerworks/java/library/j-perf06304">JTune</a> visualization tool.</p>
+<h3><a name="javatoohighlevel" id="javatoohighlevel"></a>Isn't Java too high level?</h3>
+<p>This complaint is the age old one of abstraction versus speed and control. The details of the argument often include the following statements:</p>
+<p>1. Java&rsquo;s use of classes, objects and, inheritance add too much overhead without enough coding benefit;<br>
+2. Java&rsquo;s machine independence means that low-level, fast operations, such as direct Video RAM I/O, are impossible.</p>
+<p>Statement (1) ignores the obvious benefits of reusing and extending Java&rsquo;s very large class library, which includes high-speed I/O, advanced 2D and 3D graphics, and an enormous range of networking techniques, from lowly sockets to distributed agents. Also forgotten are the advantages of object oriented design, typified by UML, which makes complex, large real-world systems more manageable during development, implementation, and maintenance.</p>
+<p>Statement (2) impacts gaming when we consider high-speed graphics, but it's been addressed in recent versions of Java. J2SE 1.4 introduced a <a href="http://java.sun.com/docs/books/tutorial/extra/fullscreen/">full-screen exclusive mode (FSEM)</a>, which suspends the normal windowing environment, and allows an application to more directly access the underlying graphics hardware. It permits techniques such as page flipping, and provides control over the screen's resolution and image depth. The principal aim of FSEM is to speed up graphics-intensive applications, such as games. Statement (2) also comes into play for game perpherals, such as joysticks and gamepads; machine independence seems to suggest that 'non-standard' I/O devices won't be useable. Java games requiring these types of devices can utilize <a href="http://java.sun.com/docs/books/tutorial/native1.1/">JNI, the Java Native Interface</a>, to link to C or C++ and so to the hardware. There's even <a href="https://jinput.dev.java.net/">JInput</a>, a new game controller API, due to be finalised early in 2005.</p>
+<p>An interesting historical observation is that the gaming community use to think that C and C++ were too high-level for fast, efficient games programming, when compared to assembly language. Opinions started to change only after the obvious success of games written in C, such as Doom and Dungeon Master, in the mid 1980s. Also important was the appearance of cross-platform development tools that supported C, such as Renderware.</p>
+<h3><a name="graphicsor3D" id="graphicsor3D"></a>Is anyone using Java to write graphics-intensive or 3D software?</h3>
+<p>An good example is Java games, some of which are commercial. The number of commercial Java games is small compared to ones coded in C++ or C, but the number is growing, and many have garnered awards and become bestsellers:</p>
+<p><a href="http://www.puzzlepirates.com">Puzzle Pirates</a> by Three Rings, a multiplayer pirate game that includes Tetris- or Columns-like puzzles at various points. Both the client and server are written in Java. It won several awards during 2004, including the Technical Excellence and Audience Choice prizes at the Game Developers Conference.</p>
+<p><a href="http://www.chromethegame.com/en/show.php">Chrome</a> by Techland. A futuristic multiplayer FPS made up of 14 different missions, in an amazing variety of landscapes. It received a Duke's Choice Award from Sun Microsystems in 2004 for the most innovative product using Java technology.</p>
+<p><a href="http://www.lawandordergame.com/index2.htm">Law and Order II</a>, by Legacy Interactive. A detective game written in Java, <a href="https://java3d.dev.java.net/">Java 3D</a>, and <a href="http://developer.apple.com/quicktime/qtjava/">Quicktime for Java</a>. The first Law and Order sold over 100,000 units.</p>
+<p> <a href="http://www.abandonedcastle.com">Kingdom of Wars</a>, set in the fantasy world of Jairon, by Abandoned Castle Studios<br>
+<a href="http://www.puppygames.net/info.php?game=Alien_Flux"><br>
+Alien Flux</a>, an exciting arcade shoot-em-up from Puppy Games<br>
+<br>
+<a href="http://www.eaglegames.net/products/WAR_AOI/wai.shtml">War! Age of Imperialism</a>, a computer version of the award-winning board game from Eagle Games.</p>
+<p><a href="http://www.runescape.com">Runescape</a> by Jagex is a massive 3D multiplayer fantasy adventure game. Clients can use a Java applet to play, or download a Windows-based client application.</p>
+<p><a href="http://www.lucasarts.com/products/galaxies">Star Wars Galaxies</a> from LucasArts has its game logic coded in Java.</p>
+<p><a href="http://www.il2sturmovik.com">IL-2 Sturmovikand</a> the new version IL2-Forgotten Battles by Ubi-Soft. Award winning WW I aerial combat using Java and C++.</p>
+<p><a href="http://www.starfireresearch.com/pernica/pernica.html">Pernica</a> by Starfire Research. An online fantasy role-playing game first implemented in Java 3D, recently ported to Xith3D.</p>
+<p><a href="http://www.cosm-game.com">Cosm</a> from Navtools, Inc. Another fun online fantasy-based role-playing game.</p>
+<p><a href="http://www.eagames.com/free/home.jsp">C&amp;C Attack Copter</a>. A free online action game based on the Command &amp; Conquer series from Electronic Arts.</p>
+<p><a href="http://www.roboforge.com">Roboforge</a> by Liquid Edge Games. Train a 3D robot to fight in online tounaments. It was given an &quot;Excellent 87%&rdquo; by PC Gamer Magazine.</p>
+<p><a href="http://www.galactic-village.com">Galactic Village</a> by Galactic Village Games, a massively multiplayer strategy game, written entirely in Java. Not yet finished, although alpha versions have been appearing.</p>
+<p><a href="http://www.wurmonline.com">Wurm Online</a> by Mojang Specifications. Another massively multiplayer fantasy game, written in Java. Still at the alpha stages of development, but the screenshots look great.</p>
+<p><a href="http://www.jellyvision.com">Jellyvision</a> used a mix of Java and C++ in their popular Who wants to be a Millionaire (2000) and You don't know Jack (1995) games. They employed Java for the game logic, an approach also used in Majestic (2001) by Electronic Arts.</p>
+<p> Java was utilized as a scripting language in the acclaimed Vampire - the Masquerade: Redemption (2000) from <a href="http://www.nihilistic.com">Nihilistic software</a>.</p>
+<p>Tom Clancy's Politika (1997) from <a href="(http://www.redstorm.com">Red Storm Entertainment</a> was written in almost pure Java. Both Shadow Watch (2000) and Tom Clancy&rsquo;s ruthless.com (1998) mixed Java and C/C++.</p>
+<p>A good source for non-technical lists of Java games, both commercial and freeware/shareware, can be found on the <a href="http://www.java.com/en/lifestyle/games">Java games pages</a> at java.com. It divides games into several categories: action, adventure, strategy, puzzle, cards, sports, and so on.</p>
+<p>There are many, many Java games out on the Web, but finding a game that's well written requires a careful search. Many applets date from the late 1990&rsquo;s, and were<br>
+designed using the outdated JDK 1.0 and 1.1 with their feeble media APIs (graphics, sounds, etc). The initial Java euphoria produced some less than exciting games, more concerned with technical trickery. This large pool of useless applets got Java labelled as a toy language.</p>
+<p>Recent versions of Java are quite different: speed is vastly improved, and APIs crucial to gaming, such as graphics and audio, are of a high quality. There's been a move away from applets towards the downloading of client-side applications using Java Web Start.</p>
+<p>Java&rsquo;s backwards compatibility allows the applets from 1996-8 to be executed, and they'll often run quicker than originally. However, it&rsquo;s probably best to steer clear of these Java dinosaurs, and look for more modern code.</p>
+<p>There are numerous Web sites with free/shareware Java games. The emphasis of the following list is on applications/applets for playing:</p>
+<p>&bull; <a href="http://grexengine.com/sections/externalgames">Java Games Factory</a> (JGF). There aren&rsquo;t many games at this site (about 50), but they're all high quality. The aim is to show off the variety of modern Java game technologies.<br>
+&bull; <a href="http://www.arcadepod.com/java">ArcadePod.com</a>, Over 750 Java games, nicely categorized.<br>
+&bull; <a href="http://www.java4fun.com/java.html">Java 4 Fun</a>, Similar in style to ArcadePod, and a good set of links to other sites.<br>
+&bull; <a href="http://www.jars.com">jars.com</a>, A general Java site with a ratings scheme. There are many games, but a lot of them are old applets.<br>
+&bull; <a href="http://www.javashareware.com">Java Shareware</a>, Another general site: look under the categories: applications/games/ and applets/games.<br>
+&bull; <a href="http://www.mnsi.net/%7Erkerr">Java Games Central</a>, A personal Web site which lists games with ratings and links. It was last updated in 2001.</p>
+<p>Some good freeware/shareware games at the moment:</p>
+<p>&bull; Super Elvis (also known as Hallucinogenesis) by <a href="http://puppygames.net">puppygames.net</a>, which won the Sun Microsystems 2004 Technology Game Development Contest. Super Elvis <a href="http://www.puppygames.net/downloads/hallucinogenesis/hallucinogenesis.jnlp">can be downloaded using Java Web Start</a><br>
+&bull; <a href="http://www.flyingguns.com">FlyingGuns</a>, a 3D multiplayer WW1 fighter plane game/simulator.<br>
+&bull; <a href="http://www.mycgiserver.com/%7Emovegaga/cosmictrip.html">Cosmic Trip</a>, an arcade style 3D game with striking graphics.<br>
+&bull; <a href="http://home.halden.net/tombr/squareheads/squareheads.html">Squareheads</a> a multiplayer FPS (it came third in the developer contest).<br>
+&bull; <a href="http://javaisdoomed.sourceforge.net">Escape</a>, a Doom-like FPS.<br>
+&bull; <a href="http://membres.lycos.fr/franckcalzada/Billard3D/Pool.html">CazaPool3D</a>, a pool game that allows online (single/multiplayer) play in an applet or as a standalone application.</p>
+<p>Programmers looking for source code should start at one of the following sites:</p>
+<p>&bull; <a href="http://sourceforge.net/search">SourceForge</a>, SourceForge acts as a repository, and management tool, for software projects, many with source code. A recent search for (java + game) returned over 70 projects that had 40% or greater activity. One of the drawbacks of SourceForge is that it can be quite difficult to decide whether a project is vaporware or not. Good projects, which have been completed, will show low activity after a time, dropping down the list of search results.<br>
+&bull; <a href="http://freshmeat.net/">FreshMeat.com</a>, Freshmeat maintains thousands of applications, most released under open source licenses. The search facilities are excellent, and can be guided by game category terms. The results include rating, vitality, and popularity figures for each piece of software. A recent search for Java in the Games/Entertainment category returned nearly 70 hits. Many applications turn up at both SourceForge and FreshMeat.<br>
+&bull; <a href="http://www.javagaming.org/cgibin/JGNetForums/YaBB.cgi?board=Announcements">The &quot;Your Games Here&quot; Java Games Forum</a>, Implementors can post links to their games, and (perhaps more importantly) users can post their opinions as follow-ups.<br>
+&bull; <a href="http://www.codebeach.com">Code Beach</a>, CodeBeach has a searchable subsection for Java games that currently contains nearly 90 example.<br>
+&bull; <a href="http://www.programmersheaven.com/zone13">Programmers Heaven</a>, It has a &lsquo;Java zone&rsquo; containing some games.</p>
+<h3><a name="whyJOGL" id="whyJOGL"></a>Why choosing JOGL?</h3>
+<p>The original Stellarium software has been written using a C OpenGL API. JOGL is a Java version of the latest OpenGL API 2.0, including vendor extension, which conforms to the expected Java standard support for JOGL (<a href="http://jcp.org/en/jsr/detail?id=231">JSR 231</a>). Furthermore, contrary on other APIs, it allows mixing both OpenGL and Swing.</p>
+<p>&nbsp;</p>
+<h2><a name="installing"></a>Installing Stellarium</h2>
+<h3><a name="requirements"></a>What are Stellarium's system requirements?</h3>
+<p>A graphics card capable of rendering OpenGL. A Riva TNT2, released in 1999 or 2000, should do. Stellarium is also fairly processor intensive, so you will get higher framerates with faster processors. Any reasonably recent computer should be able to run Stellarium. Furthermore your computer should be running a Linux, Windows or MacOSX operating system.</p>
+<h3><a name="install"></a>How do I install Stellarium?</h3>
+<p>For Windows users, run the downloaded file &quot;setup.exe&quot; and follow the instructions.<br>
+For Linux users, the easiest is to find a pre-compiled package for your distribution.<br>
+But it is also possible to compile the program yourself: detailed compilation instructions for Linux, Posix, Cygwin and MacOSX are available in the &quot;install&quot; file.<br>
+</p>
+<h3><a name="uninstall"></a>How do I uninstall Stellarium?</h3>
+<p>For Windows users, uninstall Stellarium using the &quot;Add or Remove Programs&quot; applet in the Windows control panel.<br>
+For Linux users, use your packet manager if you installed a pre-compiled version.<br>
+If you compiled yourself you can uninstall by typing "make uninstall" in the compilation directory. </p>
+<p>&nbsp;</p>
+<h2><a name="using"></a>Using Stellarium</h2>
+<h3><a name="quickstart" id="quickstart"></a>How do I start using Stellarium?</h3>
+<ul>
+<li>Set your location first! The default location is Paris, France. You can click on your location on the map in the configuration window, or enter coordinates manually. Don't forget to save the changes. Do that by clicking &quot;set as default&quot;. From now on, the sky will look exactly as it looks where you live when you run Stellarium. If you take Stellarium along on a trip with a laptop, you will need to adjust your location of course.</li>
+</ul>
+<br/>
+<ul>
+<li>Use the arrow keys to look around.</li>
+</ul>
+<br />
+<ul>
+<li>Use the page up and page down keys to zoom in and out.</li>
+</ul>
+<br />
+<ul>
+<li>Use the left mouse button to select an object, the right button to deselect the object and middle mouse button or spacebar to center on the selected object.</li>
+</ul>
+<br />
+<ul>
+<li>Zooming on nebulas or planets is very interesting...</li>
+</ul>
+<br />
+<ul>
+<li>J slows down or reverses speed, L increases time speed, and K makes time return to normal speed.</li>
+</ul>
+<br />
+<ul>
+<li>Press the H key for help.
+<p></p>
+<h3><a name="keys" id="keys"></a>What are the available keyboard controls?</h3>
+<table width="100%" border="0">
+<tr>
+<td>A</td>
+<td> toggle atmosphere on/off</td>
+</tr>
+<tr>
+<td>C</td>
+<td> show constellation line drawings </td>
+</tr>
+<tr>
+<td>D</td>
+<td> show star names</td>
+</tr>
+<tr>
+<td>E</td>
+<td> show equatorial grid</td>
+</tr>
+<tr>
+<td>F</td>
+<td> fog on/off</td>
+</tr>
+<tr>
+<td>G</td>
+<td> show ground, the landscape</td>
+</tr>
+<tr>
+<td>H</td>
+<td> show the help window</td>
+</tr>
+<tr>
+<td>I</td>
+<td> show information about the program</td>
+</tr>
+<tr>
+<td>J</td>
+<td> slow down time</td>
+</tr>
+<tr>
+<td>K</td>
+<td> return time to normal speed</td>
+</tr>
+<tr>
+<td>L</td>
+<td> speed up time</td>
+</tr>
+<tr>
+<td>N</td>
+<td> show nebula labels</td>
+</tr>
+<tr>
+<td>O</td>
+<td> moon scale on/off</td>
+</tr>
+<tr>
+<td>P</td>
+<td> toggle between show planet labels, show planet orbits, show nothing</td>
+</tr>
+<tr>
+<td>Q</td>
+<td> toggle cardinal points on/off</td>
+</tr>
+<tr>
+<td>R</td>
+<td> show constellation art </td>
+</tr>
+<tr>
+<td>S</td>
+<td> stars on/off</td>
+</tr>
+<tr>
+<td>T</td>
+<td> track a selected object without centering on it</td>
+</tr>
+<tr>
+<td>V</td>
+<td> show constellation names</td>
+</tr>
+<tr>
+<td>W</td>
+<td> show azimuthal grid</td>
+</tr>
+<tr>
+<td>1</td>
+<td> show configuration window</td>
+</tr>
+<tr>
+<td>4</td>
+<td> show ecliptic line</td>
+</tr>
+<tr>
+<td>5</td>
+<td> show equator line</td>
+</tr>
+<tr>
+<td>8</td>
+<td> return to the present time</td>
+</tr>
+<tr>
+<td>9</td>
+<td> show meteor showers. Press three times for maximum intensity, the fourth time toggles meteors off </td>
+</tr>
+<tr>
+<td>SPACE</td>
+<td> center on a selected object</td>
+</tr>
+<tr>
+<td>ENTER</td>
+<td> switch between equatorial and altazimuthal mount</td>
+</tr>
+<tr>
+<td>(</td>
+<td> go back 24 hours into the past</td>
+</tr>
+<tr>
+<td>)</td>
+<td> progress 24 hours into the future</td>
+</tr>
+<tr>
+<td>[</td>
+<td> go back 7 days into the past</td>
+</tr>
+<tr>
+<td>]</td>
+<td> progress 7 days into the future</td>
+</tr>
+<tr>
+<td>M</td>
+<td> show the TUI, the text user interface that accesses useful configuration options from within the program</td>
+</tr>
+<tr>
+<td>Ctrl+F</td>
+<td>open search dialog </td>
+</tr>
+<tr>
+<td>Ctrl+Q</td>
+<td> exit Stellarium</td>
+</tr>
+<tr>
+<td>Ctrl+S</td>
+<td> take a screenshot</td>
+</tr>
+</table>
+<h3><a name="resolution"></a>How do I change the screen resolution to one that isn't specified in the menu?</h3>
+<p>You are running Stellarium on one of those fancy widescreen laptops, and there is no option specifying your screen resolution in the menu. In that case, just open the config.ini file with a text editor, and find the screen_w and screen_h values. Set the numbers to the desired dimensions, save the file and restart Stellarium: enjoy the view!</p>
+<h3><a name="config" id="config"></a>What do all those values in the configuration file mean?</h3>
+<p>Starting from version 0.6.0 the most useful configuration options can be set from within the program, using the TUI.<br />
+You can however change them by hand in the file located in config/config.ini on Windows/MacOSX and in $HOME/.stellarium/ on a Unix system.</p>
+<p>Here are the specifications of each configuration option, as you encounter them in the config.ini file itself:</p>
+<table width="100%">
+<tr>
+<td><p>[video]</p></td>
+<td><p>&nbsp;</p></td>
+</tr>
+<tr>
+<td><p>fullscreen = true</p></td>
+<td><p>set to false if you want Stellarium to run in a window instead of fullscreen. You still need to define the window size below.</p></td>
+</tr>
+<tr>
+<td><p>screen_w = 1024</p></td>
+<td><p>horizontal screen size</p></td>
+</tr>
+<tr>
+<td><p>screen_h = 768</p></td>
+<td><p>vertical screen size</p></td>
+</tr>
+<tr>
+<td><p>bbp_mode = 32</p></td>
+<td><p>colour depth in bits. Other options are &quot;24&quot;, &quot;16&quot; or &quot;8&quot;. Use these lower values on older systems with less powerful video cards.</p></td>
+</tr>
+<tr>
+<td><p>horizontal_offset = 0</p></td>
+<td><p>viewport horizontal offset.</p></td>
+</tr>
+<tr>
+<td><p>vertical_offset = 0</p></td>
+<td><p>viewport vertical offset.</p></td>
+</tr>
+<tr>
+<td><p>&nbsp;</p></td>
+<td><p>&nbsp;</p></td>
+</tr>
+<tr>
+<td><p>[projection]</p></td>
+<td><p>&nbsp;</p></td>
+</tr>
+<tr>
+<td><p>type = perspective</p></td>
+<td><p>projection mode. Other options are &quot;fisheye&quot;</p></td>
+</tr>
+<tr>
+<td><p>viewport = maximized</p></td>
+<td><p>maximize the viewport so that it fits your screen size.</p></td>
+</tr>
+<tr>
+<td><p>&nbsp;</p></td>
+<td><p>&nbsp;</p></td>
+</tr>
+<tr>
+<td><p>[localization]</p></td>
+<td><p>&nbsp;</p></td>
+</tr>
+<tr>
+<td><p>sky_culture = western</p></td>
+<td><p>sets the culture Stellarium uses. Other options are &quot;Polynesian&quot;</p></td>
+</tr>
+<tr>
+<td><p>&nbsp;</p></td>
+<td><p>&nbsp;</p></td>
+</tr>
+<tr>
+<td><p>[stars]</p></td>
+<td><p>&nbsp;</p></td>
+</tr>
+<tr>
+<td><p>star_scale = 1.1</p></td>
+<td><p>multiplies the size of the stars</p></td>
+</tr>
+<tr>
+<td><p>star_mag_scale = 1.3</p></td>
+<td><p>multiplies the magnitude of the stars</p></td>
+</tr>
+<tr>
+<td><p>star_twinkle_amount = 0.3</p></td>
+<td><p>sets the amount of twinkling</p></td>
+</tr>
+<tr>
+<td><p>max_mag_star_name = 1.5</p></td>
+<td><p>sets the magnitude of the stars whose labels will be shown</p></td>
+</tr>
+<tr>
+<td><p>flag_star_twinkle = true</p></td>
+<td><p>set to &quot;false&quot; to turn star twinkling off</p></td>
+</tr>
+<tr>
+<td><p>flag_point_star = false</p></td>
+<td><p>&nbsp;</p></td>
+</tr>
+<tr>
+<td><p>&nbsp;</p></td>
+<td><p>&nbsp;</p></td>
+</tr>
+<tr>
+<td><p>[gui]</p></td>
+<td><p>&nbsp;</p></td>
+</tr>
+<tr>
+<td><p>flag_menu = true</p></td>
+<td><p>set to &quot;false&quot; to hide the menu</p></td>
+</tr>
+<tr>
+<td><p>flag_help = false</p></td>
+<td><p>set to &quot;true&quot; to show help on startup</p></td>
+</tr>
+<tr>
+<td><p>flag_infos = false</p></td>
+<td><p>set to &quot;true&quot; to show info on startup</p></td>
+</tr>
+<tr>
+<td><p>flag_show_topbar = true</p></td>
+<td><p>set to &quot;true&quot; to show the info bar at top of the screen</p></td>
+</tr>
+<tr>
+<td><p>flag_show_time = true</p></td>
+<td><p>set to &quot;false&quot; to hide time</p></td>
+</tr>
+<tr>
+<td><p>flag_show_date = true</p></td>
+<td><p>set to &quot;false&quot; to hide date</p></td>
+</tr>
+<tr>
+<td><p>flag_show_appname = true</p></td>
+<td><p>set to &quot;true&quot; to show the &quot;Stellarium vXX&quot; in the top bar</p></td>
+</tr>
+<tr>
+<td><p>flag_show_selected_object_info = true</p></td>
+<td><p>set to &quot;false&quot; if you don't want info about the selected object</p></td>
+</tr>
+<tr>
+<td><p>gui_base_colour = 0.3,0.4,0.7</p></td>
+<td><p>these three numbers determine the colour of the interface in RGB values, where &quot;1&quot; is the maximum</p></td>
+</tr>
+<tr>
+<td><p>gui_text_colour = 0.7,0.8,0.9</p></td>
+<td><p>these three numbers determine the colour of the text in RGB values, where &quot;1&quot; is the maximum</p></td>
+</tr>
+<tr>
+<td><p>base_font_size = 15</p></td>
+<td><p>sets the font size</p></td>
+</tr>
+<tr>
+<td><p>flag_show_fps = true</p></td>
+<td><p>set to &quot;false&quot; if you don't want to see at how many frames per second Stellarium is rendering</p></td>
+</tr>
+<tr>
+<td><p>flag_show_fov = true</p></td>
+<td><p>set to &quot;false&quot; if you don't want to see how many degrees your field of view is</p></td>
+</tr>
+<tr>
+<td><p>&nbsp;</p></td>
+<td><p>&nbsp;</p></td>
+</tr>
+<tr>
+<td><p>[colour]</p></td>
+<td><p>&nbsp;</p></td>
+</tr>
+<tr>
+<td><p>azimuthal_colour = 0.3,0.2,0.1</p></td>
+<td><p>sets the colour of the azimuthal grid in RGB values, where &quot;1&quot; is the maximum</p></td>
+</tr>
+<tr>
+<td><p>equatorial_colour = 0.1,0.2,0.3</p></td>
+<td><p>sets the colour of the equatorial grid in RGB values, where &quot;1&quot; is the maximum</p></td>
+</tr>
+<tr>
+<td><p>equator_colour = 0.2,0.2,0.6</p></td>
+<td><p>sets the colour of the equatorial line in RGB values, where &quot;1&quot; is the maximum</p></td>
+</tr>
+<tr>
+<td><p>ecliptic_colour = 0.6,0.2,0.2</p></td>
+<td><p>sets the colour of the eclipticl line in RGB values, where &quot;1&quot; is the maximum</p></td>
+</tr>
+<tr>
+<td><p>const_lines_colour = 0.1,0.15,0.2</p></td>
+<td><p>sets the colour of the constellation lines in RGB values, where &quot;1&quot; is the maximum</p></td>
+</tr>
+<tr>
+<td><p>const_names_colour = 0.1,0.2,0.3</p></td>
+<td><p>sets the colour of the constellation names in RGB values, where &quot;1&quot; is the maximum</p></td>
+</tr>
+<tr>
+<td><p>nebula_label_colour = 0.4,0.3,0.5</p></td>
+<td><p>sets the colour of the nebula labels in RGB values, where &quot;1&quot; is the maximum</p></td>
+</tr>
+<tr>
+<td><p>nebula_circle_colour = 0.8,0.8,0.1</p></td>
+<td><p>sets the colour of the circle of the nebula labels in RGB values, where &quot;1&quot; is the maximum</p></td>
+</tr>
+<tr>
+<td><p>cardinal_colour = 0.6,0.2,0.2</p></td>
+<td><p>sets the colour of the cardinal points in RGB values, where &quot;1&quot; is the maximum</p></td>
+</tr>
+<tr>
+<td><p>planet_names_colour = 0.5,0.5,0.7</p></td>
+<td><p>sets the colour of the planet names in RGB values, where &quot;1&quot; is the maximum</p></td>
+</tr>
+<tr>
+<td><p>planet_orbits_colour = 0.6,1.0,1.0</p></td>
+<td><p>sets the colour of the planet orbits in RGB values, where &quot;1&quot; is the maximum</p></td>
+</tr>
+<tr>
+<td><p>&nbsp;</p></td>
+<td><p>&nbsp;</p></td>
+</tr>
+<tr>
+<td><p>[tui]</p></td>
+<td><p>&nbsp;</p></td>
+</tr>
+<tr>
+<td><p>flag_enable_tui_menu = false</p></td>
+<td><p>set to &quot;true&quot; if you want to see the text user interface when &quot;M&quot; is pressed.</p></td>
+</tr>
+<tr>
+<td><p>flag_show_gravity_ui = false</p></td>
+<td><p>set to &quot;true&quot; if you want to see labels that experience gravity, suited for dome projections.</p></td>
+</tr>
+<tr>
+<td><p>flag_show_tui_datetime = false</p></td>
+<td><p>set to &quot;true&quot; if you want to see a date and time label suited for dome projections</p></td>
+</tr>
+<tr>
+<td><p>flag_show_tui_short_obj_info = false</p></td>
+<td><p>set to &quot;true&quot; if you want to see object info suited for dome projections.</p></td>
+</tr>
+<tr>
+<td><p>&nbsp;</p></td>
+<td><p>&nbsp;</p></td>
+</tr>
+<tr>
+<td><p>[navigation]</p></td>
+<td><p>&nbsp;</p></td>
+</tr>
+<tr>
+<td><p>preset_sky_time = 2451514.250011573</p></td>
+<td><p>Preset sky time used by the dome version. Unit is Julian Day.</p></td>
+</tr>
+<tr>
+<td><p>startup_time_mode = Actual</p></td>
+<td><p>Set the startup time mode, can be &quot;Actual&quot; (start with current real world time), or &quot;Preset&quot; (start at time defined by preset_sky_time)</p></td>
+</tr>
+<tr>
+<td><p>flag_enable_zoom_keys = true</p></td>
+<td><p>set to &quot;false&quot; if you want to disable the zoom keys</p></td>
+</tr>
+<tr>
+<td><p>flag_enable_move_keys = true</p></td>
+<td><p>set to &quot;false&quot; if you want to disable the arrow keys</p></td>
+</tr>
+<tr>
+<td><p>init_fov = 60</p></td>
+<td><p>initial field of view, in degrees</p></td>
+</tr>
+<tr>
+<td><p>init_view_pos = 1,0.00001,0.2</p></td>
+<td><p>initial viewing direction. This is a vector with x,y,z-coordinates</p></td>
+</tr>
+<tr>
+<td><p>auto_move_duration = 1.399999976158142</p></td>
+<td><p>duration for the program to point on a position when space bar is pressed</p></td>
+</tr>
+<tr>
+<td><p>flag_utc_time = false</p></td>
+<td><p>set to &quot;true&quot; if you want to display the time in UTC</p></td>
+</tr>
+<tr>
+<td><p>viewing_mode = horizon</p></td>
+<td><p>if set to &quot;horizon&quot;, the viewing mode simulate an altazimutal mount, if set to &quot;equatorial&quot;, the viewing mode simulates an equatorial mount</p></td>
+</tr>
+<tr>
+<td><p>flag_manual_zoom = false</p></td>
+<td><p>set to &quot;true&quot; if you want to auto-zoom in incrementally.</p></td>
+</tr>
+<tr>
+<td><p>&nbsp;</p></td>
+<td><p>&nbsp;</p></td>
+</tr>
+<tr>
+<td><p>[landscape]</p></td>
+<td><p>&nbsp;</p></td>
+</tr>
+<tr>
+<td><p>flag_ground = true</p></td>
+<td><p>set to &quot;false&quot; if you don't want to see the ground</p></td>
+</tr>
+<tr>
+<td><p>flag_horizon = true</p></td>
+<td><p>set to &quot;false&quot; if you don't want to see the horizontal part of the landscape></p></td>
+</tr>
+<tr>
+<td><p>flag_fog = true</p></td>
+<td><p>set to &quot;false&quot; if you don't want to see fog on startup</p></td>
+</tr>
+<tr>
+<td><p>flag_atmosphere = true</p></td>
+<td><p>set to &quot;false&quot; if you don't want to see atmosphere on startup</p></td>
+</tr>
+<tr>
+<td><p>atmosphere_fade_duration = 2</p></td>
+<td><p>sets the amount of time the atmosphere takes to fade in or out, in seconds</p></td>
+</tr>
+<tr>
+<td><p>&nbsp;</p></td>
+<td><p>&nbsp;</p></td>
+</tr>
+<tr>
+<td><p>[viewing]</p></td>
+<td><p>&nbsp;</p></td>
+</tr>
+<tr>
+<td><p>flag_constellation_drawing = false</p></td>
+<td><p>set to &quot;true&quot; if you want to see the constellation line drawings on startup</p></td>
+</tr>
+<tr>
+<td><p>flag_constellation_name = false</p></td>
+<td><p>set to &quot;true&quot; if you want to see the constellation names on startup</p></td>
+</tr>
+<tr>
+<td><p>flag_constellation_art = false</p></td>
+<td><p>set to &quot;true&quot; if you want to see the constellation art on startup</p></td>
+</tr>
+<tr>
+<td><p>flag_constellation_pick = false</p></td>
+<td><p>set to &quot;true&quot; if you only want to see the line drawing, art and name of the selected constellation star</p></td>
+</tr>
+<tr>
+<td><p>flag_azimutal_grid = false</p></td>
+<td><p>set to &quot;true&quot; if you want to see the azimuthal grid on startup</p></td>
+</tr>
+<tr>
+<td><p>flag_equatorial_grid = false</p></td>
+<td><p>set to &quot;true&quot; if you want to see the equatorial grid on startup</p></td>
+</tr>
+<tr>
+<td><p>flag_equator_line = false</p></td>
+<td><p>set to &quot;true&quot; if you want to see the equator line on startup</p></td>
+</tr>
+<tr>
+<td><p>flag_ecliptic_line = false</p></td>
+<td><p>set to &quot;true&quot; if you want to see the ecliptic line on startup</p></td>
+</tr>
+<tr>
+<td><p>flag_cardinal_points = true</p></td>
+<td><p>set to &quot;false&quot; if you don't want to see the cardinal points</p></td>
+</tr>
+<tr>
+<td><p>flag_gravity_labels = false</p></td>
+<td><p>set to &quot;true&quot; if you want labels to undergo gravity. Useful with dome projection.</p></td>
+</tr>
+<tr>
+<td><p>flag_init_moon_scaled = true</p></td>
+<td><p>change to &quot;false&quot; if you want to see the real moon size on startup </p></td>
+</tr>
+<tr>
+<td><p>moon_scale = 4</p></td>
+<td><p>sets the moon scale factor, to correlate to our perception of the moon's size</p></td>
+</tr>
+<tr>
+<td><p>constellation_art_intensity = 0.5</p></td>
+<td><p>this number multiplies the brightness of the constellation art images</p></td>
+</tr>
+<tr>
+<td><p>constellation_art_fade_duration = 1.5</p></td>
+<td><p>sets the amount of time the constellation art takes to fade in or out, in seconds</p></td>
+</tr>
+<tr>
+<td><p>&nbsp;</p></td>
+<td><p>&nbsp;</p></td>
+</tr>
+<tr>
+<td><p>[astro]</p></td>
+<td><p>&nbsp;</p></td>
+</tr>
+<tr>
+<td><p>flag_stars = true</p></td>
+<td><p>set to &quot;false&quot; to hide the stars on startup</p></td>
+</tr>
+<tr>
+<td><p>flag_star_name = true</p></td>
+<td><p>set to &quot;false&quot; to hide the star labels on startup</p></td>
+</tr>
+<tr>
+<td><p>flag_planets = true</p></td>
+<td><p>set to &quot;false&quot; to hide the planet labelson startup</p></td>
+</tr>
+<tr>
+<td><p>flag_planets_hints = true</p></td>
+<td><p>set to &quot;false&quot; to hide the planet hints on startup</p></td>
+</tr>
+<tr>
+<td><p>flag_planets_orbits = false</p></td>
+<td><p>set to &quot;true&quot; to show the planet orbits on startup</p></td>
+</tr>
+<tr>
+<td><p>flag_nebula = true</p></td>
+<td><p>set to &quot;false&quot; to hide the nebulas on startup</p></td>
+</tr>
+<tr>
+<td><p>flag_nebula_name = false</p></td>
+<td><p>set to true&quot; to show the nebula labels on startup</p></td>
+</tr>
+<tr>
+<td><p>flag_milky_way = true</p></td>
+<td><p>set to &quot;false&quot; to hide the Milky Way</p></td>
+</tr>
+<tr>
+<td><p>max_mag_nebula_name = 8</p></td>
+<td><p>sets the magnitude of the nebulas whose name is shown</p></td>
+</tr>
+<tr>
+<td><p>flag_bright_nebulae = false</p></td>
+<td><p>Increase nebulae brightness to enhance viewing (less realistic)</p></td>
+</tr>
+<tr>
+<td><p>&nbsp;</p></td>
+<td><p>&nbsp;</p></td>
+</tr>
+<tr>
+<td><p>[init_location]</p></td>
+<td><p>&nbsp;</p></td>
+</tr>
+<tr>
+<td><p>name = Paris</p></td>
+<td><p>sets your location's name</p></td>
+</tr>
+<tr>
+<td><p>atitude = +48?57'36.00"<br />
+longitude = +02?46'9.23</p></td>
+<td><p>sets your coordinates</p></td>
+</tr>
+<tr>
+<td><p>altitude = 83</p></td>
+<td><p>sets your current elevation</p></td>
+</tr>
+<tr>
+<td><p>landscape_name = Guereins</p></td>
+<td><p>sets the landscape you see. Other options are &quot;sea&quot;, &quot;forest&quot;, &quot;snowy&quot; and &quot;trees&quot;</p></td>
+</tr>
+<tr>
+<td><p>time_zone = system_default</p></td>
+<td><p>can be &quot;system_default&quot; only yet (use timezone defined in the system locale)</p></td>
+</tr>
+<tr>
+<td><p>time_display_format = system_default</p></td>
+<td><p>set the time display format mode: can be &quot;system_default&quot;, &quot;24h&quot; or &quot;12h&quot;.</p></td>
+</tr>
+<tr>
+<td><p>date_display_format = system_default</p></td>
+<td><p>set the date display format mode: can be &quot;system_default&quot;, &quot;mmddyyyy&quot;, &quot;ddmmyyyy&quot;or &quot;yyyymmdd&quot; (ISO8601).</p></td>
+</tr>
+</table>
+<p>&nbsp;</p>
+<h2><a name="customize"></a>Customization</h2>
+<h3><a name="changelandscape" id="changelandscape"></a>How do I change the landscape? </h3>
+<p>Either you edit the config.ini file, which is just a text file that can be opened by a text editor, or you use the TUI to cycle through the different landscapes. Note that the TUI must be enabled in the config.ini file for it to come up when pressing &quot;T&quot;.</p>
+<p>In the config.ini file you will find a value named &quot;landscape_name&quot;. You can alter the variable to any of the landscapes defined in the landscapes.ini fie in the texture directory. Some options are &quot;sea&quot;, &quot;forest&quot;, &quot;trees&quot;... </p>
+<p>To enable the TUI in the config.ini file, find the value &quot;flag_enable_tui_menu&quot; and set it to &quot;true&quot;. <br>
+Using the TUI, all you need to do is navigate through the options with the arrow buttons, and the landscapes will load while Stellarium is running. </p>
+<h3><a name="adddeepsky" id="adddeepsky"></a>How do I show my own deep sky objects in Stellarium?</h3>
+<p>Stellarium is great to show your own collection of deep sky objects. If you want to add your own images in Stellarium, you will need to put the textures in Stellarium's texture directory, and if necessary change the <a href="#messier">messier.fab</a> file. If you are using your own photographs, or you have access to files that can be used freely, it would be great if you made them available for everyone, and we can include them in future versions of Stellarium.</p>
+<h3><a name="landscapeskin" id="landscapeskin"></a>How do I make my own landscape skin for Stellarium?</h3>
+<p>If you have a complete 360 degrees panorama and you want to use it in Stellarium, you have two options. Either save it as a circular &quot;fisheye&quot; picture (like the forest texture), or cut it up in smaller parts (like the more advanced Guereins texture) and let Stellarium use it that way. In any case, you need to add a section to the <a href="#landscape">landscapes.ini</a> file and play with the parameters so your skin looks as good as possible.<br>
+<br>
+The hardest part is stitching together the pictures you've made, though <a href="http://www.cs.ubc.ca/~mbrown/autostitch/autostitch.html">Autostitch</a> does an amazing and automated job at that. Which means only the task of making the square ground texture match seamlessly to the side textures is a challenge. Use an image editor.<br>
+<br />
+Since we're looking to add new landscapes, you're very welcome to share your landscape skin. So if you are a photostitcher, photographer, or you can allow the use of a 360&deg; panorama, don't hesitate to let us know!<br>
+If it's a particularly interesting panorama but you don't feel like fiddling with all the options yourself, someone on the Stellarium team might offer to take the photos and prepare them for Stellarium. Just contact us and ask. </p>
+<h3><a name="changeconstart" id="changeconstart"></a>How do I use other constellation art in Stellarium?</h3>
+<p>Want to use other drawings than the ones included in Stellarium, like your own drawings, or antique drawings from the Uranographia?<br />
+You will need to change the constellation textures, and possibly adjust their coordinates in the <a href="#constart">constellationsart.fab</a> file.<br />
+If they're not burdened by restrictive copyrights, you can share the set you made with the rest of the community.</p>
+<h3><a name="moreobjects" id="moreobjects"></a>Is it possible to show more stars?</h3>
+<p>Stellarium uses the Hipparchos catalog, which contains over 120000 stars. It is currently not possible to use other star catalogs.</p>
+<h3><a name="language" id="language"></a>Is Stellarium available in my language?</h3>
+<p>For the time being, you will need to change <a href="#customizable">some files</a> yourself, if you want to see the planet, constellation or star names in your own language. And if you do translate a file, please share it with thousands of international Stellarium users. An easier way to change Stellarium's language is currently being implemented.</p>
+<h3><a name="customizable" id="customizable"></a>What are the files I can customize?</h3>
+<p> If you wish to, you can change the following files.<br />
+<a href="#commonname">commonname.fab and name.fab</a> contain the commonly used star names.<br />
+<a href="#constart">constellationsart.fab </a>contains the constellation art info, their position and the location of the texture.<br />
+<a href="#constship">constellationship.fab</a> describes the constellation line drawings.<br />
+<a href="#fonts">courierfont.txt and spacefont.txt</a> contain coordinates of the font texture<br />
+<a href="#messier">messier.fab</a> is the list of nebulas.<br />
+<a href="#solarsystem">ssystem.ini</a> contains the settings of the bodies of the solarsystem<br />
+<a href="#landscape">landscape.ini</a> contains the settings of the landscape skins. This is where you start tweaking your own landscape skin.</p>
+<p><strong><a name="commonname" id="commonname"></a>commonname.fab and name.fab</strong><br />
+<em>description</em>: Contains the commonly used star names.<br />
+<em>type</em>: ascii file, fields separated by | (pipe), end of line is CR ('\n')<br />
+<em>example line</em>: 62956|Alioth<br />
+<em>format</em>: HPnum|Star_Name<br />
+- HPnum: (unsigned int) the Hipparchos catalog star number<br />
+- Star_Name: (string) The name string without spaces. The &quot;_&quot; will be replaced by a space in the program.</p>
+<strong><a name="constart" id="constart"></a>constellationsart.fab</strong><br />
+<em>description</em>: Contains the constellation art info: i.e. the coordinates of the art, and the path to the textures of the mythologic figures.<br />
+<em>type</em>: ascii file, fields separated by SPACE, end of line is CR ('\n')<br />
+<em>example line</em>: Lep lepus_m 104 57 24305 90 29 24845 33 42 27288<br />
+<em>format</em>: ConstRef TextureFile x1 y1 HP1 x2 y2 HP2 x3 y3 HP3<br />
+- ConstRef: Short international name abbreviation of 3 characters, the first character is a capital letter.<br />
+- TextureFile: Texture file name without the png extension(no space characters allowed). The texture file has to be in the Stellarium texture directory.<br />
+- x1 y1 hp1 (respectively 2 and 3): the x and y position of the matching star with Hipparchos number hp1 (respectively 2 and 3) on the texture image. The values are in pixels with the (0,0) in the upper left corner of the texture image. <br />
+Note: the associated texture file must be in png format and have no alpha channel. The black background shows up as transparent.
+<p><strong><a name="constship" id="constship"></a>constellationship.fab</strong><br />
+<em>description</em>: Contains the shape of the constellation lines.<br />
+<em>type</em>: ascii file, fields separated by SPACE, end of line is CR ('\n')<br />
+<em>example line</em>: And ANDROMEDE ANDROMEDA 3 9640 5447 5447 4436 4436 3881<br />
+<em>format</em>: ConstRef ConstCommonName ConstInternationnalName NumberOfSegments seg11 seg12 seg21 seg22 etc...<br />
+- ConstRef: Short international name abbreviation of 3 characters, the first character is a capital letter.<br />
+- ConstCommonName: Commonly used name (currently in French!)<br />
+- ConstInternationnalName: The international name in Latin.<br />
+- NumberOfSegments: the number of segments in the line drawing.<br />
+- segx1 segx2: the Hipparchos number of the stars 1 and 2 joined to form the xth segment.</p>
+<p><strong><a name="fonts" id="fonts"></a>courierfont.txt and spacefont.txt</strong><br />
+<em>description</em>: contains the character position of the font texture.<br />
+<em>type</em>: ascii file, fields separated by SPACE, end of line is CR ('\n')<br />
+<em>first line format</em>: CourierFont LineSize 21<br />
+- Font Name<br />
+- LineSize s: s is the maximum character height.<br />
+<em>other line example</em>: 065 02 2 14 21 0<br />
+<em>other line format</em>: ascii# x y w h s<br />
+- ascii#: ascii number of the character<br />
+- x y: position of the upper left corner of the character in the font texture (in pixel).<br />
+- w h: width and height of the character on the texture<br />
+- s: space to add at the end of the char when displaying.</p>
+<p><strong><a name="messier" id="messier"></a>messier.fab</strong><br />
+<em>description</em>: Contains the list of nebulas (not necessarily Messier objects)<br />
+<em>type</em>: ascii file, fields separated by SPACE, end of line is CR ('\n')<br />
+<em>example line</em>: 1952 RS 05 34.5 +22 +01 8.2 06.0 0 M1_-_Crab_Nebula m1 Wineglass_Observatory <br />
+<em>format</em>: NGCnumber NebulaType hh min.mm deg min.mm mag size texRotation Name TexName Credits <br />
+- NGCnumber: NGC catalog number<br />
+- NebulaType: TODO and change..<br />
+- hh min.mm: right ascension hour and minutes and tenth of minutes<br />
+- deg min.mm: declination in degree min and tenth of minutes<br />
+- mag: magnitude<br />
+- size: angular size in arcminute<br />
+- TexRotation: rotation of the texture so that it matches the reality.<br>
+- Name: Nebula name with spaces replaced by &quot;_&quot;<br />
+- TexName: texture file name. png file without alpha channel.<br>
+- Credits: photo credits </p>
+<p><strong><a name="solarsystem" id="solarsystem"></a>ssystem.ini</strong><br />
+<em>description</em>: contains the characteristics of the bodies of the solar system.<br />
+<em>type</em>: ini file. One section per body in the solar system.<br />
+<em>Section example</em>:</p>
+<table width="100%" border="0">
+<tr>
+<td>[io]</td>
+<td>Section name, has to be unique</td>
+</tr>
+<tr>
+<td>name = Io</td>
+<td>Body name</td>
+</tr>
+<tr>
+<td>parent = Jupiter</td>
+<td>Body parent</td>
+</tr>
+<tr>
+<td>radius = 1821.</td>
+<td>Radius in km</td>
+</tr>
+<tr>
+<td>halo = true</td>
+<td>Show a halo or not?</td>
+</tr>
+<tr>
+<td>colour = 1.,1.,1. </td>
+<td>Halo colour</td>
+</tr>
+<tr>
+<td>tex_map = io</td>
+<td>Texture map file without extension (has to be a png)</td>
+</tr>
+<tr>
+<td>tex_halo = star16x16</td>
+<td>Halo texture file</td>
+</tr>
+<tr>
+<td>lightning = true</td>
+<td>Compute shadow on it or not.</td>
+</tr>
+<tr>
+<td>albedo = 0.61</td>
+<td> Body albedo (measure of reflectivity) range from 0 to 1</td>
+</tr>
+<tr>
+<td>rot_rotation_offset = 220.8</td>
+<td>For texture alignment</td>
+</tr>
+<tr>
+<td>rot_obliquity = 0.0</td>
+<td>Planet obliquity (axial tilt relative to the orbit plane)</td>
+</tr>
+<tr>
+<td>coord_func = ell_orbit</td>
+<td>Define the coordinate computation funcion: can be a custom function or &quot;ell_orbit&quot;</td>
+</tr>
+<tr>
+<td>orbit_Epoch = 2443000.00038375</td>
+<td>Ell_orbit calculation parameter</td>
+</tr>
+<tr>
+<td>orbit_Period = 1.769138</td>
+<td>Ell_orbit calculation parameter</td>
+</tr>
+<tr>
+<td>orbit_SemiMajorAxis = 421600</td>
+<td>Ell_orbit calculation parameter</td>
+</tr>
+<tr>
+<td>orbit_Eccentricity = 0.0041</td>
+<td>Ell_orbit calculation parameter</td>
+</tr>
+<tr>
+<td>orbit_Inclination = 0.040</td>
+<td>Ell_orbit calculation parameter</td>
+</tr>
+<tr>
+<td>orbit_AscendingNode = 312.981</td>
+<td>Ell_orbit calculation parameter</td>
+</tr>
+<tr>
+<td>orbit_LongOfPericenter = 97.735</td>
+<td>Ell_orbit calculation parameter</td>
+</tr>
+<tr>
+<td>orbit_MeanLongitude = 106.724</td>
+<td>Ell_orbit calculation parameter</td>
+</tr>
+</table>
+<p> <strong><a name="landscape" id="landscape"></a>landscape.ini</strong><br />
+<em>description</em>: contains the settings of the different landscape skins.<br />
+<em>type</em>: ini file, editable with a text editor. One section per landscape.<br />
+Note: there can be 2 landscape types, the ones made from a fisheye picture and the ones made from many smaller textures. The fisheye texture images must be centered on the zenith, north on the bottom.</p>
+<p><br />
+Section example for a fisheye texture: </p>
+<table width="100%" border="0">
+<tr>
+<td>[palm]</td>
+<td>Section name</td>
+</tr>
+<tr>
+<td>name = Palm</td>
+<td>Landscape name</td>
+</tr>
+<tr>
+<td>type = fisheye</td>
+<td>Type = fisheye</td>
+</tr>
+<tr>
+<td>maptex = landscapes/horizonalpha512</td>
+<td>Fisheye texture file name</td>
+</tr>
+<tr>
+<td>texturefov = 210</td>
+<td>Field of View covered by the texture (180 = half dome, 360 = full sphere)</td>
+</tr>
+<tr>
+<td>author = G&eacute;rard_Dupont</td>
+<td>Author name</td>
+</tr>
+</table>
+<p>And this is a section example for the kind of advanced landscape texture shown below:<br>
+<br>
+<img src="gfx/faq-landscape.jpg" alt="advanced landscape"></p>
+<table width="100%" border="0">
+<tr>
+<td>[Guereins]</td>
+<td>Section name</td>
+</tr>
+<tr>
+<td>name = Guereins</td>
+<td>Landscape name</td>
+</tr>
+<tr>
+<td>type = old_style</td>
+<td>type can be &quot;old_style&quot; (defined with a bunch of textures) or &quot;fisheye&quot; (defined with one big 360 view, only one texture).</td>
+</tr>
+<tr>
+<td> nbsidetex = 8</td>
+<td>number of texture files</td>
+</tr>
+<tr>
+<td>tex0 = landscapes/guereins4</td>
+<td>number, name and path to the texture file</td>
+</tr>
+<tr>
+<td>tex1 = landscapes/guereins5</td>
+<td><div align="center">&quot;</div></td>
+</tr>
+<tr>
+<td>tex2 = landscapes/guereins6</td>
+<td><div align="center">&quot;</div></td>
+</tr>
+<tr>
+<td>tex3 = landscapes/guereins7</td>
+<td><div align="center">&quot;</div></td>
+</tr>
+<tr>
+<td>tex4 = landscapes/guereins8</td>
+<td><div align="center">&quot;</div></td>
+</tr>
+<tr>
+<td>tex5 = landscapes/guereins1</td>
+<td><div align="center">&quot;</div></td>
+</tr>
+<tr>
+<td>tex6 = landscapes/guereins2</td>
+<td><div align="center">&quot;</div></td>
+</tr>
+<tr>
+<td>tex7 = landscapes/guereins3</td>
+<td><div align="center">&quot;</div></td>
+</tr>
+<tr>
+<td>nbside = 8</td>
+<td>define the number of textures used, the following parameters for each texture give the coordinates of the subrectangle to map on each side (range from 0 to 1)</td>
+</tr>
+<tr>
+<td>side0 = tex0:0:0.005:1:1</td>
+<td></td>
+</tr>
+<tr>
+<td>side1 = tex1:0:0.005:1:1</td>
+<td></td>
+</tr>
+<tr>
+<td>side2 = tex2:0:0.005:1:1</td>
+<td></td>
+</tr>
+<tr>
+<td>side3 = tex3:0:0.005:1:1</td>
+<td></td>
+</tr>
+<tr>
+<td>side4 = tex4:0:0.005:1:1</td>
+<td></td>
+</tr>
+<tr>
+<td>side5 = tex5:0:0.005:1:1</td>
+<td></td>
+</tr>
+<tr>
+<td>side6 = tex6:0:0.005:1:1</td>
+<td></td>
+</tr>
+<tr>
+<td>side7 = tex7:0:0.005:1:1</td>
+<td></td>
+</tr>
+<tr>
+<td>groundtex = landscapes/guereinsb</td>
+<td>path to the ground texture needed for the landscape</td>
+</tr>
+<tr>
+<td>ground = groundtex:0:0:1:1</td>
+<td></td>
+</tr>
+<tr>
+<td>fogtex = fog</td>
+<td>define the fog texture name and sub-rectangle in next section.</td>
+</tr>
+<tr>
+<td>fog = fogtex:0:0:1:1</td>
+<td></td>
+</tr>
+<tr>
+<td>nb_decor_repeat = 1</td>
+<td>number of overall repeats of the scenery (i.e, 3 will stretch the textures so that each of them is displayed 3 times in 360&deg;.)</td>
+</tr>
+<tr>
+<td>decor_alt_angle = 40</td>
+<td>vertical angular size of the scenery textures; how high does the landscape show up </td>
+</tr>
+<tr>
+<td>decor_angle_shift = -22</td>
+<td>vertical angular offset of the scenery textures; at which height are the side textures placed</td>
+</tr>
+<tr>
+<td>decor_angle_rotatez = 0</td>
+<td>angular rotation of the scenery around the vertical axis; handy for rotating the landscape so north is in the right direction</td>
+</tr>
+<tr>
+<td>ground_angle_shift = -22</td>
+<td>vertical angular offset of the ground texture; at which height is the ground texture placed </td>
+</tr>
+<tr>
+<td>ground_angle_rotatez = 45</td>
+<td>angular rotation of the ground texture around the vertical axis; when the sides are rotated, the ground that was made to match up needs to rotate too</td>
+</tr>
+<tr>
+<td>fog_alt_angle = 20</td>
+<td>vertical angular size of the fog texture; how high does the fog look </td>
+</tr>
+<tr>
+<td>fog_angle_shift = -3</td>
+<td>vertical angular offset of the fog texture; at what height is it drawn </td>
+</tr>
+<tr>
+<td>draw_ground_first = 1</td>
+<td>set to &quot;1&quot; so that the ground is drawn in front of the scenery, i.e. the scenery texture will overlap over the ground.</td>
+</tr>
+</table>
+<h2><a name="problems" id="problems"></a>Problems</h2>
+<h3><a name="installprob" id="installprob"></a>I can't install Stellarium.</h3>
+<p>Read the installation instructions contained in the &quot;INSTALL&quot; file, which comes with Stellarium.</p>
+<h3><a name="doesnotrun" id="doesnotrun"></a>Stellarium installs, but does not run. </h3>
+<p>We can offer some accounts of what people experienced in the past. </p>
+<p>Firstly, it is possible your computer refuses to run Stellarium because the resolution in the <a href="#config">config.ini</a> file is wrong. Set it to your native resolution and see if that helps.</p>
+<p>Secondly, maybe a file necessary for Stellarium was corrupted or badly formatted in some way. Try reinstalling, don't forget to backup any Stellarium files you might have customized. </p>
+<p>Thirdly, Stellarium reports basic actions in a text output file, named stdout.txt, which is in the program directory. If you are running Stellarium on a computer where you don't have the right user privileges to do that, Stellarium refuses to run.</p>
+<p>Lastly, stdout.txt and also stderr.txt might offer some insight into what goes on when Stellarium exhibits problems.</p>
+<h3><a name="slow" id="slow"></a>I experience very slow rendering, very low framerates on my computer.</h3>
+This happens when hardware rendering is disabled. If you have a 3D video card, make sure that your OpenGL drivers are installed and up to date.
+<h3><a name="crash" id="crash"></a>Stellarium crashes after it has been running for a while.</h3>
+Stellarium is pretty processor intensive. This means things can get quite warm inside your computer. If you experience freezes or computer crashes, you might have a heat problem. If this is the case, other processor intensive tasks such as mp3 encoding should lead to the same problem.
+</ul>
+<h1>&nbsp;</h1>
+</body>
+</html>

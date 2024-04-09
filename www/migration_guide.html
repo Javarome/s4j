@@ -1,0 +1,98 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<html>
+<head>
+<title>Stellarium Developer guide v 0.2</title>
+<meta name="description" content="Stellarium Developer guide v 0.2">
+<meta name="keywords" content="developer_guide">
+<meta name="resource-type" content="document">
+<meta name="distribution" content="global">
+
+<meta name="Generator" content="LaTeX2HTML v2002-2-1">
+<meta http-equiv="Content-Style-Type" content="text/css">
+
+<link rel="STYLESHEET" href="developer_guide.css">
+
+</head>
+
+<body >
+
+<p>
+<h1 align="CENTER"><b>Stellarium for Java Migration guide</b> 
+<br>
+v 0.1</h1>
+<div>
+
+<p align="CENTER"><strong>J&eacute;r&ocirc;me Beau </strong></p>
+</div>
+
+<p>
+
+<h3>Abstract:</h3>
+<div>
+This document aims to describe the migration of the Stellarium program from C++ to Java.</div>
+<h2><a name="SECTION00010000000000000000">Introduction</a>
+</h2>
+<p>Stellarium is written using C++, which has a lot of common with Java.</p>
+<p>The issues are :</p>
+<ul>
+<li> Typing
+<ul>
+<li><a href="#booleans">Booleans</a> </li>
+<li><a href="#Enumerations">Enumerations</a></li>
+</ul>
+</li>
+<li>Templates</li>
+<li><a href="#FunctionPointers">Function pointers</a> </li>
+<li>Libraries
+<ul>
+<li><a href="#OpenGL">OpenGL</a></li>
+</ul>
+</li>
+</ul>
+<h2>Instanciations</h2>
+<p>In C++, failed instanciations return null, which is usually interpreted by Stellarium as a sign for writing an error message and end the program. In Java, instanciations cannot return null. Either they succeed or fail, that is, throw an exception. </p>
+<h2><a name="Typing"></a>Typing</h2>
+<h3><a name="booleans"></a>Booleans</h3>
+<p> Stellarium emulates boolean values though integer values. 0 stands for false, and 1 stands true.</p>
+<h3><a name="Enumerations" id="Enumerations"></a>Operator redefinition </h3>
+<p>Stellarium uses C++ operation redefinition. Java does not support this language feature, but can enable it through operator-like methods.</p>
+<h3><a name="Enumerations" id="Enumerations"></a>Enumerations</h3>
+<p>Stellarium uses C++ enumeration. Java support this language feature since its version 1.5. </p>
+<p>LinkedList&lt;s_square&gt; stack;</p>
+<h3><a name="Enumerations" id="Enumerations"></a>Parameters by references </h3>
+<p>Stellarium uses &quot;out&quot; parameters that are modified as multiple returned values. Java does not support this language feature but can emulate it by using references to mutable objects.</p>
+<h3><a name="Enumerations" id="Enumerations"></a>Default values </h3>
+<p>Stellarium uses C++ default values, which allow the developper to avoid providing some parameter values which will be assumed as default values specified it the method prototype. This language feature is not supported in Java, but can be implemented as overloading methods enforcing such default values. </p>
+<h3><a name="Templates" id="Templates"></a>Templates</h3>
+<p>Stellarium uses the C++ ability to defined parameterized classes, a.k.a templates. </p>
+<p>This feature is available in Java since its version 1.5. </p>
+<h2><a name="FunctionPointers"></a>Function pointers</h2>
+<p>Stellarium use the ability of C to use function pointers. Because of its insulation from memory-specific issues, Java doesn't allow such a capability. However, it can be emulated through object design pattern such as Strategies. </p>
+<h2>GUI</h2>
+<p>Stellarium implement its own Graphical User Interface. In Java most of these functions are built in the platform, thanks to the AWT and Swing.</p>
+<h2>Dates</h2>
+<p>Stellarium implement its own date/time funtions. In Java most of these functions are built in the platform, thanks to the java.util.Date and java.util.Calendar classes.</p>
+<h2>Librairies</h2>
+<h3><a name="OpenGL"></a>OpenGL</h3>
+<p>Stellarium uses OpenGL as its 2D and 3D graphic API. In the Java world, OpenGL is available in serveral ways :</p>
+<ul>
+<li>proprietary APIs
+<ul>
+<li>JOGL</li>
+</ul>
+</li>
+<li>Java3D standard API s </li>
+</ul>
+<p>We choosed to use JOGL to ease a first migration step. </p>
+<hr>
+<address>
+jerome 2005-06-24
+</address>
+</body>
+</html>

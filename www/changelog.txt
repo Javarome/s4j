@@ -1,0 +1,47 @@
+0.7.0 [2005-08-08]
+Added planet trails - hit "4" or "," once for ecliptic, again for trails (advance time to observe).
+Added precession of the equinoxes.
+Added daylight savings accounting for all platforms (needs testing).
+More realistic and efficient meteor showers.
+Added and set-up gettext facilities.
+Added maximum_fps configuration setting to allow limiting CPU usage.
+Added rudimentary scripting features - see doc/commands.html.
+Atmosphere now darkens during solar eclipses.
+Added lunar eclipse simulation.
+Added a fader class, lines and objects fade in/out easily now.
+Added MacosX Xcode project file from Da-Woon Joung.
+Added patches from Fumio Yamamoto for various fixes.
+Removed all the libpng/zlib .c files from the glgpng directory, use host system libpng instead (fix debian bug #318026).
+Fix to work with non-US keyboards.
+Added more sky label languages.
+Sky languages are no longer hard coded.
+Cardinal points are now translated based on sky language.
+TUI is now using gettext.
+Added some accented characters to spacefont.
+Fixed various typos and other bugs.
+Added a Loading Bar class.
+Started a code spring clean aiming at removing the design mistakes with the core class. The goal is to split the current stel_core into 2 classes, one being the actual core managing sky display, the other one stel_app will manage all I/O, parameters managment, UI, locales etc..Added fader on stars labels.
+Added loading bars for nebulae and stars loading.
+Corrected Sun rotational period.
+Added missing hipparcos stars to database.
+Added splash screen, new icons and improved pointers by Johan.
+Improved Milky Way tone conversion. 
+Added more star names.
+Sky labels now default to user locale language if possible.
+Added fader on nebula hints (hints can now draw even when atmosphere is on).
+Added fader on cardinal points.
+Now display star distances.
+Added Spanish translation by Sergio Trujillo.
+Fixed deselect while zooming in crash bug.
+Added Dutch translation by Johan Meuris.
+Slowed down pan and tilt speed.
+Viewing direction is changed when mouse is dragged.
+Added configuration menu to select landscape.
+Added part of Tony Furr's patch to add long nebula names, fix loading bar bugs and fix win32 compilation issue.
+Added Dev-C++ projetc file and win32 compilation HOWTO by Tony Furr.
+Added Chinese and Egyptian constellations.
+Limited maximum FOV to 180 deg to prevent buggy side effects, set fisheye projection as default.
+Added Kdevelop project file.
+Added Johan last landscape "Hoge Rielen".
+Added some accented characters to courrierfont.
+Updated windows installer.

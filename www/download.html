@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>Stellarium for Java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script language="JavaScript" type="text/JavaScript">
+<!--
+
+
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+//-->
+</script>
+<link href="stellarium.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<h1>Download</h1>
+<h2>Requirements</h2>
+<ul>
+<li><a href="http://java.sun.com/j2se/1.5.0/download.jsp">J2SE Runtime Environment (JRE) 5.0</a> or higher.</li>
+<li><a href="https://java3d.dev.java.net/">Java 3D</a> 1.3 or higher. </li>
+<li><a href="https://jogl.dev.java.net/">JOGL</a> 1.1.1 or higher</li>
+<li>A 3D Card with a support for <a href="http://www.opengl.org">OpenGL</a> or Direct3X. At least a Voodoo3 or a TNT2 is recommended for smooth animation.</li>
+<li>A dark room for realistic rendering : details like the Milky Way or star twinkling can't be seen in a bright room.</li>
+</ul>
+<h2>Download</h2>
+<p>No executable version of Stellarium for Java is downloadable yet. Please see the <a href="http://stellarium.org/download.html" target="_top">original Stellarium executables download page</a>. </p>
+<h2>CVS version</h2>
+<p>The CVS version is now obsolete. See the <a href="#SVN">SVN version</a>.</p>
+<h2><a name="SVN"></a>SVN version</h2>
+<p>You can browse the SVN trunk tree from <a href="http://svn.sourceforge.net/viewcvs.cgi/stellarium4java/">here</a>.<br>
+To get the latest SVN snapshot (from sourceforge) just checkout (using Tortoise SVN) or (using Tigris SubVersion command line tools) type in a console: </p>
+<p><code> svn co https://svn.sourceforge.net/svnroot/stellarium4java stellarium4java</code></p>
+<p>then to build from the sources, type: </p>
+<p><code> cd stellarium4java<br>
+ant</code></p>
+<p>finally try a local run: </p>
+<p><code> cd classes<br>
+java Main</code></p>
+</body>
+</html>

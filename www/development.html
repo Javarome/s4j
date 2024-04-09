@@ -1,0 +1,106 @@
+<html>
+<head>
+<title>Stellarium for Java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script language="JavaScript" type="text/JavaScript">
+<!--
+
+
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+//-->
+</script>
+<link href="stellarium.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<h1>development</h1>
+<ul>
+<li><a href="#devplan">Development plan</a></li>
+<li><a href="javadoc/index.html">Javadoc</a></li>
+<li><a href="#migration">Migration</a></li>
+</ul>
+<h2><a name="devplan"></a>Development plan</h2>
+<h3>1<sup>st</sup> Release: Isofunctionality </h3>
+<ul>
+<li>Isofunctionnality with <a href="http://stellarium.cvs.sourceforge.net/stellarium/stellarium/?pathrev=stellarium-0-8-2">Stellarium 0.8.2</a>. </li>
+<li>Uses <a href="https://jogl.dev.java.net/">JOGL</a>.</li>
+</ul>
+<h3>2<sup>nd</sup> Release: Improvements </h3>
+<ul>
+<li>Support for artificial satellite tracking</li>
+<li>Support for ionized gaz rendering </li>
+<li>Replacement of <a href="https://jogl.dev.java.net/">JOGL</a> by <a href="https://java3d.dev.java.net/">Java3D</a> in order to support both OpenGL and Direct3X</li>
+</ul>
+<h2><a name="migration"></a>Migration</h2>
+
+<p>This section aims to describe the migration of the Stellarium program from C++ to Java. The former has a lot of common with the latter, especially since Java 5. The issues are :</p>
+<ul>
+<li> Typing
+<ul>
+<li><a href="#booleans">Booleans</a> </li>
+<li><a href="#operators">Operator redefinition</a></li>
+<li><a href="#Enumerations">Enumerations</a></li>
+<li><a href="#generictypes">Generic types</a> </li>
+</ul>
+</li>
+<li>Method calls
+<ul>
+<li><a href="#parametersbyreference">Parameters by reference</a></li>
+<li><a href="#defaultvalues">Default values</a> </li>
+<li><a href="#errormanagement">Error management</a></li>
+<li><a href="#functionpointers">Function pointers</a> </li>
+</ul>
+</li>
+<li>Libraries
+<ul>
+<li><a href="#graphics">Graphics</a></li>
+<li><a href="#GUI">GUI</a></li>
+<li><a href="#datetime">Date/time </a></li>
+</ul>
+</li>
+</ul>
+<h3>Instanciations</h3>
+<p>In C++, failed instanciations return <span class="console">null</span>, which is usually interpreted by Stellarium as a sign for writing an error message and end the program. In Java, instanciations cannot return <span class="console">null</span>. Either they succeed or fail, that is, throw an exception. </p>
+<h3><a name="Typing"></a>Typing</h3>
+<h4><a name="booleans"></a>Booleans</h4>
+<p> Stellarium emulates boolean values though integer values. <span class="console">0</span> stands for false, and <span class="console">1</span> stands true. </p>
+<p>Stellarium for Java uses the built-in <span class="console">boolean</span> type, with the predefined constants <span class="console">false</span> and <span class="console">true</span>. </p>
+<h4><a name="operators" id="operators"></a>Operator redefinition </h4>
+<p>Stellarium uses C++ operator redefinition (which may be as useful as confusing). </p>
+<p>Java does not support this language feature, but Stellarium for Java enable it through operator-like methods.</p>
+<h4><a name="Enumerations" id="Enumerations"></a>Enumerations</h4>
+<p>Stellarium uses C++ enumeration. </p>
+<p>Java support this language feature since its version 1.5. </p>
+<h4><a name="generictypes" id="generictypes"></a>Generic types </h4>
+<p>Stellarium uses the C++ ability to defined parameterized classes, a.k.a templates. </p>
+<p>This feature is available in Java since its version 1.5.</p>
+<h3>Method calls </h3>
+<h4><a name="parametersbyreference" id="parametersbyreference"></a>Parameters by references </h4>
+<p>Stellarium uses &quot;out&quot; parameters that are modified by the method and so can be interpreted as multiple returned values. </p>
+<p>Java also pass paramaters by reference, but primitive types (<span class="console">int</span>, <span class="console">double</span>, etc.) are passed by value and simple types wrappers (<span class="console">Integer</span>, <span class="console">Double</span>, etc.) are immutable. Stellarium for Java can emulate it by using references to mutable objects.</p>
+<h4><a name="defaultvalues" id="defaultvalues"></a>Default values </h4>
+<p>Stellarium uses C++ default values, which allow the developper to avoid providing some parameter values which will be assumed as default values specified it the method prototype. </p>
+<p>This language feature is not supported in Java, but can be implemented as overloading methods enforcing such default values. </p>
+<h4><a name="errormanagement"></a>Error management </h4>
+<p>Stellarium notifies errors as reserved return codes (-1, etc.) or booleans (0 for false) </p>
+<p>Stellarium for Java uses the Java exception mechanism to notify errors. </p>
+<h4><a name="FunctionPointers"></a>Function pointers</h4>
+<p>Stellarium use the ability of C to use function pointers. </p>
+<p>Because of its insulation from memory-specific issues, Java doesn't allow such a capability. However, it can be emulated through object design pattern such as Strategies. </p>
+<h3>Librairies</h3>
+<h4><a name="graphics" id="graphics"></a>Graphics</h4>
+<p>Stellarium uses OpenGL both as its 2D and 3D graphic API. </p>
+<p>In the Java world, OpenGL is available both through proprietary (JOGL) and standard (Java3D) APIs. We choosed to use JOGL to ease the initial migration step, then to use Java3D in a second release. </p>
+<h4><a name="GUI"></a>GUI</h4>
+<p>Stellarium implement its own Graphical User Interface. </p>
+<p>In Java most of these functions are built in the platform, thanks to the AWT and Swing.</p>
+<h4><a name="datetime"></a>Date/time</h4>
+<p>Stellarium implements its own date/time funtions. </p>
+<p>In Java most of these functions are built in the platform, thanks to the java.util.Date and java.util.Calendar classes</p>
+<p>&nbsp;</p>
+</body>
+</html>
