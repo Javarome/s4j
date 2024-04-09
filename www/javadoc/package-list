@@ -14,6 +14,8 @@ org.stellarium.solve
 org.stellarium.telescope
 org.stellarium.ui
 org.stellarium.ui.components
+org.stellarium.ui.dialog
 org.stellarium.ui.fader
 org.stellarium.ui.render
 org.stellarium.vecmath
+org.stellarium.webstart
